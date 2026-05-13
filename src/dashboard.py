@@ -1,4 +1,7 @@
 import os
+if not os.path.exists("output/modelos/random_forest.pkl"):
+    from main import main
+    main()
 import streamlit as st
 import pandas as pd
 import joblib
