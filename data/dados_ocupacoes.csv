@@ -1,0 +1,1001 @@
+cbo,ocupacao,escolaridade,renda,setor,regiao,risco_automacao
+4211-25,Caixa de Banco,Superior,4316,Financeiro,Nordeste,Médio
+4211-25,Caixa de Banco,Técnico,5410,Financeiro,Norte,Baixo
+7823-10,Motorista de Caminhão,Superior,2512,Logística,Nordeste,Alto
+4110-05,Auxiliar Administrativo,Superior,9885,Administrativo,Centro-Oeste,Alto
+2124-05,Analista RH,Fundamental,2007,Administrativo,Sudeste,Alto
+2124-05,Analista RH,Fundamental,11385,Administrativo,Centro-Oeste,Alto
+4110-05,Auxiliar Administrativo,Superior,10985,Administrativo,Sudeste,Alto
+4211-25,Caixa de Banco,Técnico,6946,Financeiro,Sul,Baixo
+5134-05,Garçom,Superior,7460,Serviços,Sul,Médio
+4110-05,Auxiliar Administrativo,Superior,8166,Administrativo,Norte,Alto
+4211-25,Caixa de Banco,Superior,6390,Financeiro,Nordeste,Médio
+1414-10,Gerente Comercial,Médio,3240,Comércio,Nordeste,Médio
+5211-10,Vendedor,Técnico,13915,Comércio,Sudeste,Baixo
+5211-10,Vendedor,Superior,10349,Comércio,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,14235,Administrativo,Nordeste,Alto
+4110-05,Auxiliar Administrativo,Técnico,3326,Administrativo,Nordeste,Alto
+5211-10,Vendedor,Médio,10098,Comércio,Nordeste,Médio
+3511-05,Técnico de Suporte,Médio,3666,Tecnologia,Norte,Médio
+7823-10,Motorista de Caminhão,Médio,5702,Logística,Norte,Baixo
+7823-10,Motorista de Caminhão,Fundamental,5054,Logística,Norte,Médio
+7823-10,Motorista de Caminhão,Médio,2011,Logística,Sul,Alto
+7823-10,Motorista de Caminhão,Fundamental,10487,Logística,Sul,Baixo
+3511-05,Técnico de Suporte,Superior,11847,Tecnologia,Nordeste,Baixo
+5211-10,Vendedor,Técnico,8519,Comércio,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Médio,10297,Tecnologia,Nordeste,Baixo
+4211-25,Caixa de Banco,Fundamental,14014,Financeiro,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Técnico,10962,Comércio,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Superior,11899,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Superior,10172,Tecnologia,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Superior,5096,Tecnologia,Sul,Baixo
+4110-05,Auxiliar Administrativo,Superior,10782,Administrativo,Sudeste,Alto
+1414-10,Gerente Comercial,Médio,13678,Comércio,Norte,Baixo
+4110-05,Auxiliar Administrativo,Médio,14075,Administrativo,Sudeste,Alto
+5211-10,Vendedor,Superior,8649,Comércio,Sudeste,Médio
+2521-05,Cientista de Dados,Superior,3862,Tecnologia,Sul,Médio
+5211-10,Vendedor,Superior,3105,Comércio,Sul,Médio
+2515-10,Desenvolvedor de Software,Fundamental,2991,Tecnologia,Sudeste,Médio
+2521-05,Cientista de Dados,Médio,5612,Tecnologia,Centro-Oeste,Médio
+5134-05,Garçom,Fundamental,10316,Serviços,Norte,Baixo
+4110-05,Auxiliar Administrativo,Técnico,4387,Administrativo,Norte,Alto
+2124-05,Analista RH,Técnico,10628,Administrativo,Norte,Alto
+3511-05,Técnico de Suporte,Fundamental,4671,Tecnologia,Norte,Médio
+5211-10,Vendedor,Fundamental,10805,Comércio,Sudeste,Médio
+4211-25,Caixa de Banco,Superior,8787,Financeiro,Sul,Médio
+7823-10,Motorista de Caminhão,Técnico,8695,Logística,Sudeste,Médio
+5134-05,Garçom,Médio,12043,Serviços,Sul,Baixo
+2515-10,Desenvolvedor de Software,Médio,7907,Tecnologia,Norte,Médio
+2124-05,Analista RH,Técnico,14163,Administrativo,Nordeste,Alto
+2124-05,Analista RH,Técnico,11097,Administrativo,Nordeste,Alto
+4110-05,Auxiliar Administrativo,Fundamental,3011,Administrativo,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Fundamental,2022,Financeiro,Norte,Alto
+5134-05,Garçom,Superior,6037,Serviços,Nordeste,Médio
+2515-10,Desenvolvedor de Software,Fundamental,4754,Tecnologia,Nordeste,Médio
+7823-10,Motorista de Caminhão,Técnico,8537,Logística,Nordeste,Médio
+2515-10,Desenvolvedor de Software,Médio,8749,Tecnologia,Norte,Baixo
+3511-05,Técnico de Suporte,Técnico,3775,Tecnologia,Norte,Baixo
+2521-05,Cientista de Dados,Médio,4750,Tecnologia,Sul,Baixo
+2521-05,Cientista de Dados,Fundamental,10559,Tecnologia,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Médio,8196,Comércio,Centro-Oeste,Médio
+5211-10,Vendedor,Fundamental,4202,Comércio,Sul,Baixo
+5211-10,Vendedor,Técnico,14054,Comércio,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Médio,12144,Comércio,Sudeste,Médio
+7823-10,Motorista de Caminhão,Superior,12987,Logística,Nordeste,Baixo
+4211-25,Caixa de Banco,Fundamental,11920,Financeiro,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Superior,9043,Administrativo,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Superior,8915,Financeiro,Centro-Oeste,Baixo
+3511-05,Técnico de Suporte,Superior,9107,Tecnologia,Sudeste,Médio
+2521-05,Cientista de Dados,Médio,2765,Tecnologia,Sul,Baixo
+4211-25,Caixa de Banco,Médio,7730,Financeiro,Norte,Médio
+5211-10,Vendedor,Fundamental,13270,Comércio,Nordeste,Baixo
+1414-10,Gerente Comercial,Médio,14127,Comércio,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Fundamental,5105,Tecnologia,Norte,Médio
+5211-10,Vendedor,Superior,12911,Comércio,Sudeste,Médio
+7823-10,Motorista de Caminhão,Fundamental,4892,Logística,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Fundamental,5698,Comércio,Centro-Oeste,Médio
+7823-10,Motorista de Caminhão,Superior,5922,Logística,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Médio,12729,Tecnologia,Sudeste,Baixo
+2124-05,Analista RH,Técnico,11403,Administrativo,Sul,Alto
+5134-05,Garçom,Técnico,7395,Serviços,Centro-Oeste,Baixo
+3511-05,Técnico de Suporte,Técnico,5867,Tecnologia,Sul,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,4606,Tecnologia,Norte,Baixo
+5211-10,Vendedor,Superior,4732,Comércio,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Médio,12384,Tecnologia,Sudeste,Médio
+5211-10,Vendedor,Fundamental,8508,Comércio,Centro-Oeste,Médio
+5134-05,Garçom,Fundamental,6291,Serviços,Nordeste,Baixo
+2124-05,Analista RH,Superior,5261,Administrativo,Sudeste,Alto
+1414-10,Gerente Comercial,Superior,5260,Comércio,Sul,Baixo
+1414-10,Gerente Comercial,Superior,12737,Comércio,Centro-Oeste,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,13716,Administrativo,Centro-Oeste,Alto
+2124-05,Analista RH,Fundamental,5525,Administrativo,Sul,Alto
+5211-10,Vendedor,Médio,7375,Comércio,Sul,Baixo
+4110-05,Auxiliar Administrativo,Médio,12769,Administrativo,Centro-Oeste,Alto
+4110-05,Auxiliar Administrativo,Técnico,11403,Administrativo,Centro-Oeste,Alto
+2515-10,Desenvolvedor de Software,Superior,8905,Tecnologia,Sudeste,Baixo
+4211-25,Caixa de Banco,Superior,4013,Financeiro,Sudeste,Médio
+1414-10,Gerente Comercial,Técnico,14306,Comércio,Sudeste,Médio
+4211-25,Caixa de Banco,Fundamental,4228,Financeiro,Sul,Médio
+2521-05,Cientista de Dados,Fundamental,7643,Tecnologia,Nordeste,Baixo
+2515-10,Desenvolvedor de Software,Médio,4795,Tecnologia,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Médio,13602,Tecnologia,Norte,Médio
+3511-05,Técnico de Suporte,Técnico,9150,Tecnologia,Nordeste,Baixo
+4211-25,Caixa de Banco,Fundamental,8520,Financeiro,Sudeste,Baixo
+3511-05,Técnico de Suporte,Técnico,6967,Tecnologia,Sudeste,Baixo
+4211-25,Caixa de Banco,Técnico,7113,Financeiro,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Superior,5341,Administrativo,Sudeste,Alto
+5134-05,Garçom,Técnico,8977,Serviços,Nordeste,Baixo
+3511-05,Técnico de Suporte,Médio,5856,Tecnologia,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Superior,4330,Financeiro,Norte,Baixo
+2515-10,Desenvolvedor de Software,Técnico,11261,Tecnologia,Norte,Médio
+7823-10,Motorista de Caminhão,Superior,10875,Logística,Nordeste,Médio
+4211-25,Caixa de Banco,Superior,9301,Financeiro,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Médio,10259,Logística,Sudeste,Baixo
+5211-10,Vendedor,Fundamental,5418,Comércio,Sul,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,11134,Administrativo,Sul,Alto
+7823-10,Motorista de Caminhão,Fundamental,1500,Logística,Sul,Alto
+1414-10,Gerente Comercial,Médio,5707,Comércio,Nordeste,Baixo
+5211-10,Vendedor,Fundamental,13462,Comércio,Nordeste,Baixo
+5134-05,Garçom,Superior,5856,Serviços,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,2847,Tecnologia,Norte,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,13900,Administrativo,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Médio,13005,Tecnologia,Centro-Oeste,Médio
+5134-05,Garçom,Superior,5993,Serviços,Sul,Baixo
+7823-10,Motorista de Caminhão,Técnico,11379,Logística,Sul,Médio
+2521-05,Cientista de Dados,Superior,12352,Tecnologia,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Superior,2908,Logística,Sul,Alto
+2521-05,Cientista de Dados,Técnico,12637,Tecnologia,Sul,Médio
+2521-05,Cientista de Dados,Técnico,5893,Tecnologia,Nordeste,Médio
+3511-05,Técnico de Suporte,Técnico,3596,Tecnologia,Centro-Oeste,Baixo
+2124-05,Analista RH,Superior,6341,Administrativo,Nordeste,Alto
+4211-25,Caixa de Banco,Fundamental,14488,Financeiro,Sudeste,Médio
+4211-25,Caixa de Banco,Médio,4880,Financeiro,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Técnico,8094,Comércio,Centro-Oeste,Médio
+5134-05,Garçom,Médio,14373,Serviços,Nordeste,Médio
+2521-05,Cientista de Dados,Superior,4088,Tecnologia,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Técnico,10169,Financeiro,Centro-Oeste,Médio
+2521-05,Cientista de Dados,Fundamental,8109,Tecnologia,Norte,Baixo
+4110-05,Auxiliar Administrativo,Médio,4465,Administrativo,Sul,Alto
+4211-25,Caixa de Banco,Médio,5849,Financeiro,Sul,Baixo
+4110-05,Auxiliar Administrativo,Médio,1634,Administrativo,Centro-Oeste,Alto
+4110-05,Auxiliar Administrativo,Técnico,8735,Administrativo,Sudeste,Alto
+2521-05,Cientista de Dados,Fundamental,8007,Tecnologia,Nordeste,Médio
+5211-10,Vendedor,Fundamental,5184,Comércio,Sudeste,Médio
+2521-05,Cientista de Dados,Médio,4562,Tecnologia,Norte,Baixo
+2124-05,Analista RH,Técnico,13549,Administrativo,Norte,Alto
+2515-10,Desenvolvedor de Software,Médio,4166,Tecnologia,Sul,Baixo
+2515-10,Desenvolvedor de Software,Superior,2074,Tecnologia,Sudeste,Médio
+1414-10,Gerente Comercial,Médio,3704,Comércio,Nordeste,Médio
+5134-05,Garçom,Médio,10985,Serviços,Nordeste,Baixo
+1414-10,Gerente Comercial,Médio,14881,Comércio,Norte,Baixo
+1414-10,Gerente Comercial,Fundamental,5797,Comércio,Norte,Médio
+5134-05,Garçom,Fundamental,5193,Serviços,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Fundamental,10210,Logística,Sudeste,Médio
+7823-10,Motorista de Caminhão,Técnico,9195,Logística,Sul,Baixo
+5134-05,Garçom,Médio,3303,Serviços,Sul,Médio
+5211-10,Vendedor,Médio,10438,Comércio,Norte,Médio
+7823-10,Motorista de Caminhão,Fundamental,12964,Logística,Sul,Baixo
+3511-05,Técnico de Suporte,Técnico,10741,Tecnologia,Sul,Baixo
+4211-25,Caixa de Banco,Técnico,5976,Financeiro,Nordeste,Baixo
+3511-05,Técnico de Suporte,Médio,9441,Tecnologia,Nordeste,Médio
+5211-10,Vendedor,Fundamental,4683,Comércio,Sudeste,Baixo
+7823-10,Motorista de Caminhão,Médio,13307,Logística,Sul,Médio
+4110-05,Auxiliar Administrativo,Superior,10637,Administrativo,Centro-Oeste,Alto
+4110-05,Auxiliar Administrativo,Técnico,3601,Administrativo,Sudeste,Alto
+2124-05,Analista RH,Médio,10802,Administrativo,Norte,Alto
+5134-05,Garçom,Médio,6788,Serviços,Sul,Médio
+5211-10,Vendedor,Médio,10703,Comércio,Sul,Médio
+7823-10,Motorista de Caminhão,Fundamental,6628,Logística,Nordeste,Médio
+3511-05,Técnico de Suporte,Técnico,8306,Tecnologia,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Fundamental,9097,Tecnologia,Sul,Médio
+5134-05,Garçom,Técnico,13518,Serviços,Sudeste,Médio
+5134-05,Garçom,Médio,8593,Serviços,Nordeste,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,13078,Administrativo,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Fundamental,8810,Financeiro,Centro-Oeste,Médio
+5211-10,Vendedor,Médio,11606,Comércio,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,4306,Tecnologia,Centro-Oeste,Baixo
+5134-05,Garçom,Médio,5235,Serviços,Centro-Oeste,Baixo
+5211-10,Vendedor,Médio,1729,Comércio,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Fundamental,12521,Financeiro,Sul,Baixo
+7823-10,Motorista de Caminhão,Médio,11101,Logística,Centro-Oeste,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,8395,Administrativo,Centro-Oeste,Alto
+2521-05,Cientista de Dados,Médio,13226,Tecnologia,Centro-Oeste,Baixo
+2515-10,Desenvolvedor de Software,Superior,9529,Tecnologia,Sudeste,Médio
+5134-05,Garçom,Fundamental,6363,Serviços,Norte,Médio
+2515-10,Desenvolvedor de Software,Técnico,7833,Tecnologia,Nordeste,Médio
+4211-25,Caixa de Banco,Técnico,6772,Financeiro,Nordeste,Baixo
+3511-05,Técnico de Suporte,Fundamental,14581,Tecnologia,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Técnico,12007,Logística,Norte,Médio
+4110-05,Auxiliar Administrativo,Técnico,3278,Administrativo,Nordeste,Alto
+1414-10,Gerente Comercial,Médio,5444,Comércio,Norte,Médio
+4211-25,Caixa de Banco,Médio,13443,Financeiro,Norte,Baixo
+2521-05,Cientista de Dados,Técnico,3740,Tecnologia,Norte,Médio
+2521-05,Cientista de Dados,Médio,13357,Tecnologia,Nordeste,Baixo
+4211-25,Caixa de Banco,Fundamental,13980,Financeiro,Norte,Baixo
+4110-05,Auxiliar Administrativo,Superior,9549,Administrativo,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Fundamental,1569,Financeiro,Norte,Alto
+5211-10,Vendedor,Médio,3373,Comércio,Sudeste,Médio
+1414-10,Gerente Comercial,Fundamental,12329,Comércio,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Superior,5718,Comércio,Sudeste,Médio
+2521-05,Cientista de Dados,Médio,6182,Tecnologia,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Superior,6105,Logística,Sudeste,Médio
+5211-10,Vendedor,Fundamental,10808,Comércio,Norte,Médio
+2521-05,Cientista de Dados,Médio,9474,Tecnologia,Nordeste,Baixo
+2124-05,Analista RH,Técnico,9239,Administrativo,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Fundamental,5666,Financeiro,Sul,Baixo
+4211-25,Caixa de Banco,Superior,6859,Financeiro,Sudeste,Baixo
+2521-05,Cientista de Dados,Médio,4335,Tecnologia,Sul,Médio
+4211-25,Caixa de Banco,Médio,14251,Financeiro,Sul,Médio
+2521-05,Cientista de Dados,Superior,3499,Tecnologia,Centro-Oeste,Baixo
+5134-05,Garçom,Superior,3363,Serviços,Sudeste,Baixo
+4211-25,Caixa de Banco,Técnico,2121,Financeiro,Sul,Alto
+2521-05,Cientista de Dados,Médio,12339,Tecnologia,Sudeste,Médio
+7823-10,Motorista de Caminhão,Técnico,8941,Logística,Norte,Baixo
+5134-05,Garçom,Superior,4347,Serviços,Sul,Baixo
+5211-10,Vendedor,Médio,3624,Comércio,Centro-Oeste,Médio
+2521-05,Cientista de Dados,Médio,4737,Tecnologia,Centro-Oeste,Baixo
+5134-05,Garçom,Superior,5391,Serviços,Sudeste,Médio
+7823-10,Motorista de Caminhão,Fundamental,10575,Logística,Nordeste,Médio
+7823-10,Motorista de Caminhão,Superior,14991,Logística,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Médio,10391,Comércio,Sul,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,5768,Administrativo,Nordeste,Alto
+5134-05,Garçom,Médio,13838,Serviços,Sudeste,Médio
+2521-05,Cientista de Dados,Fundamental,14547,Tecnologia,Sul,Médio
+2124-05,Analista RH,Médio,7139,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Fundamental,6371,Tecnologia,Sul,Baixo
+2124-05,Analista RH,Técnico,3617,Administrativo,Norte,Alto
+5211-10,Vendedor,Superior,2891,Comércio,Nordeste,Alto
+5211-10,Vendedor,Superior,14705,Comércio,Norte,Baixo
+3511-05,Técnico de Suporte,Médio,6703,Tecnologia,Centro-Oeste,Médio
+7823-10,Motorista de Caminhão,Médio,8766,Logística,Nordeste,Médio
+2521-05,Cientista de Dados,Superior,2707,Tecnologia,Sudeste,Médio
+2124-05,Analista RH,Fundamental,2838,Administrativo,Sudeste,Alto
+4211-25,Caixa de Banco,Médio,13960,Financeiro,Sul,Baixo
+5134-05,Garçom,Técnico,13880,Serviços,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,4752,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Médio,14982,Tecnologia,Nordeste,Médio
+3511-05,Técnico de Suporte,Técnico,10783,Tecnologia,Centro-Oeste,Médio
+7823-10,Motorista de Caminhão,Médio,11303,Logística,Sul,Médio
+4110-05,Auxiliar Administrativo,Médio,3774,Administrativo,Centro-Oeste,Alto
+1414-10,Gerente Comercial,Médio,8968,Comércio,Sul,Médio
+3511-05,Técnico de Suporte,Superior,12935,Tecnologia,Sul,Baixo
+1414-10,Gerente Comercial,Técnico,11311,Comércio,Centro-Oeste,Médio
+7823-10,Motorista de Caminhão,Técnico,7221,Logística,Centro-Oeste,Médio
+5134-05,Garçom,Médio,14725,Serviços,Nordeste,Baixo
+5134-05,Garçom,Superior,13387,Serviços,Sul,Baixo
+3511-05,Técnico de Suporte,Médio,7200,Tecnologia,Nordeste,Médio
+5134-05,Garçom,Médio,4590,Serviços,Nordeste,Médio
+7823-10,Motorista de Caminhão,Técnico,14082,Logística,Nordeste,Baixo
+2124-05,Analista RH,Superior,5241,Administrativo,Sul,Alto
+2521-05,Cientista de Dados,Superior,6444,Tecnologia,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Superior,13809,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Fundamental,8759,Tecnologia,Sudeste,Médio
+7823-10,Motorista de Caminhão,Superior,5897,Logística,Sudeste,Médio
+5211-10,Vendedor,Médio,2979,Comércio,Norte,Alto
+5211-10,Vendedor,Fundamental,14780,Comércio,Sudeste,Médio
+2521-05,Cientista de Dados,Médio,9925,Tecnologia,Sudeste,Médio
+5134-05,Garçom,Fundamental,5055,Serviços,Sul,Médio
+2124-05,Analista RH,Técnico,2578,Administrativo,Nordeste,Alto
+3511-05,Técnico de Suporte,Médio,6896,Tecnologia,Norte,Médio
+4110-05,Auxiliar Administrativo,Técnico,3646,Administrativo,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Fundamental,3739,Financeiro,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Médio,11389,Comércio,Sudeste,Baixo
+5134-05,Garçom,Superior,6402,Serviços,Nordeste,Baixo
+5134-05,Garçom,Técnico,11730,Serviços,Centro-Oeste,Baixo
+5211-10,Vendedor,Fundamental,5738,Comércio,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Fundamental,3085,Tecnologia,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Fundamental,10754,Tecnologia,Sudeste,Médio
+4211-25,Caixa de Banco,Médio,12689,Financeiro,Sudeste,Baixo
+3511-05,Técnico de Suporte,Técnico,11411,Tecnologia,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Técnico,6261,Tecnologia,Centro-Oeste,Baixo
+2124-05,Analista RH,Médio,6340,Administrativo,Sul,Alto
+5211-10,Vendedor,Técnico,14205,Comércio,Centro-Oeste,Baixo
+5134-05,Garçom,Superior,2566,Serviços,Centro-Oeste,Alto
+2124-05,Analista RH,Superior,8236,Administrativo,Sudeste,Alto
+2521-05,Cientista de Dados,Médio,11249,Tecnologia,Sudeste,Médio
+2515-10,Desenvolvedor de Software,Fundamental,2029,Tecnologia,Sul,Médio
+7823-10,Motorista de Caminhão,Técnico,9066,Logística,Nordeste,Médio
+5134-05,Garçom,Fundamental,12498,Serviços,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Técnico,8298,Financeiro,Sudeste,Médio
+1414-10,Gerente Comercial,Fundamental,6164,Comércio,Sul,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,7136,Tecnologia,Sul,Baixo
+7823-10,Motorista de Caminhão,Técnico,4634,Logística,Sul,Médio
+2124-05,Analista RH,Superior,14638,Administrativo,Sudeste,Alto
+2124-05,Analista RH,Superior,3111,Administrativo,Sudeste,Alto
+5134-05,Garçom,Superior,4425,Serviços,Sudeste,Médio
+2515-10,Desenvolvedor de Software,Médio,8647,Tecnologia,Centro-Oeste,Baixo
+3511-05,Técnico de Suporte,Médio,10232,Tecnologia,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Médio,4225,Logística,Centro-Oeste,Baixo
+4211-25,Caixa de Banco,Médio,7243,Financeiro,Nordeste,Médio
+2521-05,Cientista de Dados,Fundamental,6899,Tecnologia,Centro-Oeste,Médio
+2521-05,Cientista de Dados,Fundamental,6020,Tecnologia,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Médio,9921,Logística,Sudeste,Baixo
+2521-05,Cientista de Dados,Superior,7893,Tecnologia,Norte,Baixo
+4211-25,Caixa de Banco,Médio,4590,Financeiro,Norte,Baixo
+1414-10,Gerente Comercial,Fundamental,10499,Comércio,Norte,Baixo
+5211-10,Vendedor,Superior,6797,Comércio,Sudeste,Baixo
+5211-10,Vendedor,Fundamental,7443,Comércio,Sudeste,Médio
+4211-25,Caixa de Banco,Superior,1565,Financeiro,Centro-Oeste,Alto
+1414-10,Gerente Comercial,Superior,4472,Comércio,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Técnico,7826,Administrativo,Centro-Oeste,Alto
+5211-10,Vendedor,Médio,1822,Comércio,Sudeste,Alto
+1414-10,Gerente Comercial,Médio,4881,Comércio,Sudeste,Baixo
+4211-25,Caixa de Banco,Médio,7315,Financeiro,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Médio,5917,Tecnologia,Sudeste,Baixo
+1414-10,Gerente Comercial,Técnico,7492,Comércio,Sudeste,Baixo
+3511-05,Técnico de Suporte,Superior,11666,Tecnologia,Centro-Oeste,Médio
+2124-05,Analista RH,Médio,1913,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Fundamental,9670,Tecnologia,Sul,Médio
+5134-05,Garçom,Técnico,4573,Serviços,Norte,Baixo
+2124-05,Analista RH,Superior,11285,Administrativo,Norte,Alto
+7823-10,Motorista de Caminhão,Fundamental,7016,Logística,Sudeste,Baixo
+5134-05,Garçom,Fundamental,9799,Serviços,Centro-Oeste,Médio
+7823-10,Motorista de Caminhão,Técnico,3387,Logística,Nordeste,Médio
+5134-05,Garçom,Fundamental,3006,Serviços,Nordeste,Médio
+2124-05,Analista RH,Fundamental,8423,Administrativo,Nordeste,Alto
+7823-10,Motorista de Caminhão,Técnico,6049,Logística,Norte,Médio
+3511-05,Técnico de Suporte,Médio,4683,Tecnologia,Sudeste,Baixo
+1414-10,Gerente Comercial,Médio,11196,Comércio,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Fundamental,9519,Comércio,Sudeste,Médio
+5211-10,Vendedor,Fundamental,14307,Comércio,Sudeste,Médio
+2515-10,Desenvolvedor de Software,Técnico,2318,Tecnologia,Sudeste,Baixo
+2124-05,Analista RH,Técnico,12333,Administrativo,Sudeste,Alto
+5211-10,Vendedor,Médio,9672,Comércio,Sudeste,Médio
+2521-05,Cientista de Dados,Médio,12316,Tecnologia,Nordeste,Baixo
+5134-05,Garçom,Fundamental,2937,Serviços,Centro-Oeste,Alto
+5211-10,Vendedor,Técnico,10119,Comércio,Sudeste,Baixo
+1414-10,Gerente Comercial,Fundamental,3574,Comércio,Norte,Baixo
+2515-10,Desenvolvedor de Software,Superior,2817,Tecnologia,Sul,Médio
+1414-10,Gerente Comercial,Técnico,7123,Comércio,Sul,Baixo
+4211-25,Caixa de Banco,Superior,14704,Financeiro,Norte,Médio
+5134-05,Garçom,Fundamental,2910,Serviços,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Médio,3614,Tecnologia,Nordeste,Baixo
+3511-05,Técnico de Suporte,Superior,13674,Tecnologia,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Técnico,5721,Financeiro,Norte,Baixo
+3511-05,Técnico de Suporte,Médio,7251,Tecnologia,Norte,Baixo
+1414-10,Gerente Comercial,Superior,7951,Comércio,Norte,Baixo
+7823-10,Motorista de Caminhão,Superior,5783,Logística,Nordeste,Médio
+5211-10,Vendedor,Fundamental,9643,Comércio,Sul,Médio
+7823-10,Motorista de Caminhão,Técnico,4154,Logística,Centro-Oeste,Baixo
+2515-10,Desenvolvedor de Software,Superior,14003,Tecnologia,Nordeste,Médio
+5211-10,Vendedor,Médio,13047,Comércio,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Técnico,14530,Tecnologia,Norte,Baixo
+2515-10,Desenvolvedor de Software,Técnico,3629,Tecnologia,Sul,Médio
+2515-10,Desenvolvedor de Software,Técnico,3624,Tecnologia,Norte,Baixo
+2124-05,Analista RH,Fundamental,10204,Administrativo,Sudeste,Alto
+2521-05,Cientista de Dados,Técnico,4604,Tecnologia,Sudeste,Médio
+3511-05,Técnico de Suporte,Técnico,14613,Tecnologia,Nordeste,Médio
+3511-05,Técnico de Suporte,Técnico,8308,Tecnologia,Sul,Médio
+4211-25,Caixa de Banco,Fundamental,10612,Financeiro,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Técnico,10191,Comércio,Centro-Oeste,Baixo
+2515-10,Desenvolvedor de Software,Médio,7586,Tecnologia,Norte,Médio
+1414-10,Gerente Comercial,Médio,6047,Comércio,Norte,Baixo
+5134-05,Garçom,Fundamental,9895,Serviços,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Fundamental,10610,Tecnologia,Nordeste,Baixo
+2521-05,Cientista de Dados,Superior,11678,Tecnologia,Sudeste,Médio
+4211-25,Caixa de Banco,Superior,12233,Financeiro,Norte,Médio
+4110-05,Auxiliar Administrativo,Fundamental,9949,Administrativo,Nordeste,Alto
+5211-10,Vendedor,Superior,10418,Comércio,Nordeste,Baixo
+5134-05,Garçom,Médio,2957,Serviços,Nordeste,Alto
+4110-05,Auxiliar Administrativo,Técnico,14854,Administrativo,Sul,Alto
+2124-05,Analista RH,Superior,3624,Administrativo,Centro-Oeste,Alto
+5134-05,Garçom,Médio,5793,Serviços,Sul,Médio
+4110-05,Auxiliar Administrativo,Médio,7281,Administrativo,Centro-Oeste,Alto
+1414-10,Gerente Comercial,Técnico,12258,Comércio,Norte,Médio
+7823-10,Motorista de Caminhão,Técnico,14831,Logística,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Superior,7262,Comércio,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Médio,11938,Comércio,Sudeste,Médio
+1414-10,Gerente Comercial,Superior,14143,Comércio,Sudeste,Médio
+1414-10,Gerente Comercial,Superior,8569,Comércio,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Superior,14705,Financeiro,Sudeste,Baixo
+4211-25,Caixa de Banco,Médio,9320,Financeiro,Centro-Oeste,Baixo
+5211-10,Vendedor,Superior,2239,Comércio,Norte,Alto
+7823-10,Motorista de Caminhão,Superior,12442,Logística,Norte,Baixo
+5134-05,Garçom,Técnico,4741,Serviços,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,1510,Administrativo,Sudeste,Alto
+2521-05,Cientista de Dados,Técnico,10482,Tecnologia,Sul,Baixo
+5134-05,Garçom,Fundamental,12312,Serviços,Norte,Baixo
+5211-10,Vendedor,Médio,8461,Comércio,Sul,Médio
+2515-10,Desenvolvedor de Software,Fundamental,3862,Tecnologia,Sudeste,Baixo
+1414-10,Gerente Comercial,Superior,13724,Comércio,Sudeste,Baixo
+2521-05,Cientista de Dados,Superior,14300,Tecnologia,Norte,Baixo
+3511-05,Técnico de Suporte,Médio,3113,Tecnologia,Sul,Baixo
+5134-05,Garçom,Técnico,3813,Serviços,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Fundamental,3492,Tecnologia,Norte,Médio
+4211-25,Caixa de Banco,Técnico,4381,Financeiro,Sul,Baixo
+2521-05,Cientista de Dados,Superior,9200,Tecnologia,Sul,Médio
+4211-25,Caixa de Banco,Fundamental,8933,Financeiro,Norte,Médio
+2124-05,Analista RH,Superior,6733,Administrativo,Norte,Alto
+7823-10,Motorista de Caminhão,Técnico,10511,Logística,Centro-Oeste,Baixo
+3511-05,Técnico de Suporte,Superior,7846,Tecnologia,Nordeste,Baixo
+2515-10,Desenvolvedor de Software,Médio,7706,Tecnologia,Nordeste,Médio
+5134-05,Garçom,Fundamental,13404,Serviços,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,3069,Administrativo,Sul,Alto
+4211-25,Caixa de Banco,Fundamental,11834,Financeiro,Sul,Médio
+1414-10,Gerente Comercial,Médio,4911,Comércio,Sul,Médio
+3511-05,Técnico de Suporte,Médio,4049,Tecnologia,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Fundamental,5336,Tecnologia,Centro-Oeste,Baixo
+4110-05,Auxiliar Administrativo,Superior,14835,Administrativo,Sudeste,Alto
+5134-05,Garçom,Técnico,12174,Serviços,Sul,Médio
+7823-10,Motorista de Caminhão,Fundamental,4225,Logística,Centro-Oeste,Baixo
+5211-10,Vendedor,Superior,4245,Comércio,Sudeste,Médio
+4211-25,Caixa de Banco,Fundamental,11921,Financeiro,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Médio,6611,Tecnologia,Norte,Médio
+4211-25,Caixa de Banco,Técnico,6493,Financeiro,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Superior,10431,Administrativo,Sudeste,Alto
+2124-05,Analista RH,Superior,12543,Administrativo,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Técnico,9411,Tecnologia,Centro-Oeste,Baixo
+2124-05,Analista RH,Médio,5313,Administrativo,Sul,Alto
+7823-10,Motorista de Caminhão,Médio,1658,Logística,Sul,Alto
+7823-10,Motorista de Caminhão,Técnico,10816,Logística,Norte,Baixo
+2515-10,Desenvolvedor de Software,Médio,4638,Tecnologia,Sul,Médio
+2124-05,Analista RH,Fundamental,5755,Administrativo,Sudeste,Alto
+1414-10,Gerente Comercial,Superior,12761,Comércio,Sudeste,Baixo
+7823-10,Motorista de Caminhão,Fundamental,3828,Logística,Nordeste,Baixo
+2521-05,Cientista de Dados,Técnico,8803,Tecnologia,Sul,Baixo
+5134-05,Garçom,Médio,1638,Serviços,Sudeste,Alto
+4211-25,Caixa de Banco,Superior,13578,Financeiro,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,7048,Administrativo,Nordeste,Alto
+5134-05,Garçom,Técnico,5665,Serviços,Norte,Baixo
+2515-10,Desenvolvedor de Software,Médio,4819,Tecnologia,Centro-Oeste,Médio
+5134-05,Garçom,Médio,3959,Serviços,Centro-Oeste,Médio
+2124-05,Analista RH,Superior,6033,Administrativo,Centro-Oeste,Alto
+2124-05,Analista RH,Técnico,5360,Administrativo,Sudeste,Alto
+4211-25,Caixa de Banco,Médio,11029,Financeiro,Nordeste,Médio
+2515-10,Desenvolvedor de Software,Médio,3824,Tecnologia,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Superior,4392,Tecnologia,Nordeste,Médio
+1414-10,Gerente Comercial,Fundamental,2494,Comércio,Sul,Alto
+2515-10,Desenvolvedor de Software,Superior,8075,Tecnologia,Sul,Baixo
+5211-10,Vendedor,Fundamental,2439,Comércio,Sul,Alto
+3511-05,Técnico de Suporte,Superior,8871,Tecnologia,Centro-Oeste,Baixo
+4110-05,Auxiliar Administrativo,Superior,3655,Administrativo,Sul,Alto
+2124-05,Analista RH,Médio,14688,Administrativo,Centro-Oeste,Alto
+3511-05,Técnico de Suporte,Médio,5730,Tecnologia,Sul,Baixo
+2521-05,Cientista de Dados,Superior,5551,Tecnologia,Centro-Oeste,Baixo
+5134-05,Garçom,Fundamental,5674,Serviços,Sudeste,Médio
+4211-25,Caixa de Banco,Técnico,2096,Financeiro,Centro-Oeste,Alto
+7823-10,Motorista de Caminhão,Superior,2189,Logística,Norte,Alto
+3511-05,Técnico de Suporte,Fundamental,7669,Tecnologia,Nordeste,Baixo
+2521-05,Cientista de Dados,Médio,7399,Tecnologia,Nordeste,Baixo
+1414-10,Gerente Comercial,Médio,1932,Comércio,Nordeste,Alto
+4110-05,Auxiliar Administrativo,Técnico,11597,Administrativo,Sul,Alto
+5134-05,Garçom,Técnico,3881,Serviços,Sudeste,Baixo
+4110-05,Auxiliar Administrativo,Técnico,7445,Administrativo,Sul,Alto
+4110-05,Auxiliar Administrativo,Técnico,4908,Administrativo,Nordeste,Alto
+5211-10,Vendedor,Fundamental,14282,Comércio,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Fundamental,5675,Financeiro,Centro-Oeste,Baixo
+4211-25,Caixa de Banco,Superior,1637,Financeiro,Centro-Oeste,Alto
+1414-10,Gerente Comercial,Fundamental,13724,Comércio,Nordeste,Médio
+2521-05,Cientista de Dados,Técnico,10564,Tecnologia,Nordeste,Baixo
+2515-10,Desenvolvedor de Software,Superior,7033,Tecnologia,Sul,Baixo
+5134-05,Garçom,Superior,7700,Serviços,Nordeste,Baixo
+4211-25,Caixa de Banco,Superior,6265,Financeiro,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Fundamental,7124,Logística,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Médio,13517,Logística,Sul,Baixo
+5134-05,Garçom,Fundamental,10842,Serviços,Sudeste,Médio
+5211-10,Vendedor,Fundamental,2598,Comércio,Sudeste,Alto
+5211-10,Vendedor,Superior,13508,Comércio,Norte,Médio
+4110-05,Auxiliar Administrativo,Superior,13943,Administrativo,Nordeste,Alto
+3511-05,Técnico de Suporte,Superior,2748,Tecnologia,Nordeste,Baixo
+5134-05,Garçom,Médio,14955,Serviços,Sul,Médio
+4211-25,Caixa de Banco,Fundamental,4198,Financeiro,Sudeste,Médio
+1414-10,Gerente Comercial,Técnico,9283,Comércio,Sul,Baixo
+2124-05,Analista RH,Superior,7856,Administrativo,Nordeste,Alto
+1414-10,Gerente Comercial,Fundamental,8888,Comércio,Sul,Baixo
+2124-05,Analista RH,Técnico,2522,Administrativo,Norte,Alto
+2515-10,Desenvolvedor de Software,Técnico,10475,Tecnologia,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Médio,3308,Tecnologia,Nordeste,Médio
+2521-05,Cientista de Dados,Fundamental,9899,Tecnologia,Norte,Médio
+4110-05,Auxiliar Administrativo,Fundamental,10434,Administrativo,Sul,Alto
+2515-10,Desenvolvedor de Software,Médio,10991,Tecnologia,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Técnico,6403,Tecnologia,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Técnico,12896,Administrativo,Centro-Oeste,Alto
+5134-05,Garçom,Fundamental,12816,Serviços,Norte,Médio
+4211-25,Caixa de Banco,Superior,11449,Financeiro,Norte,Médio
+5134-05,Garçom,Fundamental,1707,Serviços,Sudeste,Alto
+2124-05,Analista RH,Médio,8105,Administrativo,Centro-Oeste,Alto
+2521-05,Cientista de Dados,Técnico,14804,Tecnologia,Sudeste,Baixo
+4110-05,Auxiliar Administrativo,Médio,12998,Administrativo,Norte,Alto
+7823-10,Motorista de Caminhão,Superior,5990,Logística,Centro-Oeste,Médio
+5134-05,Garçom,Médio,6859,Serviços,Sul,Baixo
+7823-10,Motorista de Caminhão,Superior,13636,Logística,Sul,Médio
+7823-10,Motorista de Caminhão,Técnico,2333,Logística,Sul,Alto
+3511-05,Técnico de Suporte,Técnico,9461,Tecnologia,Sul,Médio
+2124-05,Analista RH,Fundamental,12676,Administrativo,Nordeste,Alto
+5134-05,Garçom,Médio,5239,Serviços,Sul,Baixo
+1414-10,Gerente Comercial,Fundamental,8469,Comércio,Sul,Baixo
+7823-10,Motorista de Caminhão,Médio,10031,Logística,Norte,Médio
+3511-05,Técnico de Suporte,Fundamental,4759,Tecnologia,Norte,Baixo
+7823-10,Motorista de Caminhão,Superior,5345,Logística,Centro-Oeste,Médio
+5134-05,Garçom,Técnico,13248,Serviços,Sudeste,Baixo
+2521-05,Cientista de Dados,Fundamental,11070,Tecnologia,Sudeste,Baixo
+3511-05,Técnico de Suporte,Técnico,8103,Tecnologia,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Técnico,2480,Comércio,Sul,Alto
+2515-10,Desenvolvedor de Software,Técnico,9407,Tecnologia,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Técnico,14027,Financeiro,Sul,Médio
+5211-10,Vendedor,Superior,5312,Comércio,Sudeste,Médio
+1414-10,Gerente Comercial,Técnico,4740,Comércio,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Fundamental,10940,Comércio,Centro-Oeste,Médio
+5211-10,Vendedor,Superior,13200,Comércio,Centro-Oeste,Médio
+2124-05,Analista RH,Médio,8168,Administrativo,Centro-Oeste,Alto
+2521-05,Cientista de Dados,Superior,2101,Tecnologia,Sudeste,Baixo
+7823-10,Motorista de Caminhão,Técnico,2032,Logística,Centro-Oeste,Alto
+2124-05,Analista RH,Superior,6038,Administrativo,Nordeste,Alto
+5134-05,Garçom,Médio,11886,Serviços,Sudeste,Médio
+5134-05,Garçom,Superior,5399,Serviços,Sul,Médio
+2521-05,Cientista de Dados,Fundamental,13539,Tecnologia,Sudeste,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,12669,Administrativo,Norte,Alto
+4110-05,Auxiliar Administrativo,Técnico,4037,Administrativo,Nordeste,Alto
+2521-05,Cientista de Dados,Médio,13627,Tecnologia,Sudeste,Médio
+2521-05,Cientista de Dados,Técnico,14525,Tecnologia,Sul,Baixo
+5211-10,Vendedor,Superior,10640,Comércio,Nordeste,Baixo
+5211-10,Vendedor,Técnico,8901,Comércio,Norte,Médio
+2521-05,Cientista de Dados,Fundamental,11467,Tecnologia,Sudeste,Baixo
+3511-05,Técnico de Suporte,Técnico,3894,Tecnologia,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Técnico,7969,Comércio,Sudeste,Baixo
+3511-05,Técnico de Suporte,Técnico,10115,Tecnologia,Sudeste,Médio
+2124-05,Analista RH,Técnico,6994,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Superior,12429,Tecnologia,Norte,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,14156,Administrativo,Nordeste,Alto
+5211-10,Vendedor,Superior,9974,Comércio,Norte,Baixo
+2515-10,Desenvolvedor de Software,Técnico,6633,Tecnologia,Centro-Oeste,Baixo
+4211-25,Caixa de Banco,Técnico,4616,Financeiro,Sudeste,Baixo
+5211-10,Vendedor,Fundamental,4030,Comércio,Sul,Médio
+2515-10,Desenvolvedor de Software,Superior,7253,Tecnologia,Sul,Médio
+4110-05,Auxiliar Administrativo,Superior,8102,Administrativo,Nordeste,Alto
+4211-25,Caixa de Banco,Superior,14723,Financeiro,Sul,Médio
+7823-10,Motorista de Caminhão,Médio,3303,Logística,Sudeste,Baixo
+7823-10,Motorista de Caminhão,Técnico,14101,Logística,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Superior,10659,Administrativo,Centro-Oeste,Alto
+4110-05,Auxiliar Administrativo,Superior,2930,Administrativo,Nordeste,Alto
+5211-10,Vendedor,Técnico,9738,Comércio,Sudeste,Baixo
+4211-25,Caixa de Banco,Superior,7794,Financeiro,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Superior,5121,Tecnologia,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Superior,2414,Comércio,Sudeste,Alto
+4110-05,Auxiliar Administrativo,Fundamental,10827,Administrativo,Nordeste,Alto
+1414-10,Gerente Comercial,Superior,10496,Comércio,Sul,Baixo
+2515-10,Desenvolvedor de Software,Técnico,12800,Tecnologia,Nordeste,Médio
+2124-05,Analista RH,Superior,14817,Administrativo,Sul,Alto
+3511-05,Técnico de Suporte,Fundamental,6141,Tecnologia,Norte,Médio
+7823-10,Motorista de Caminhão,Técnico,3404,Logística,Sudeste,Baixo
+1414-10,Gerente Comercial,Médio,10025,Comércio,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Médio,6107,Logística,Norte,Baixo
+2124-05,Analista RH,Médio,1596,Administrativo,Sudeste,Alto
+2124-05,Analista RH,Superior,11731,Administrativo,Sul,Alto
+4211-25,Caixa de Banco,Técnico,2025,Financeiro,Norte,Alto
+3511-05,Técnico de Suporte,Técnico,3176,Tecnologia,Sudeste,Baixo
+1414-10,Gerente Comercial,Médio,8882,Comércio,Sul,Médio
+2124-05,Analista RH,Fundamental,9161,Administrativo,Sudeste,Alto
+5134-05,Garçom,Fundamental,13958,Serviços,Nordeste,Médio
+3511-05,Técnico de Suporte,Médio,6491,Tecnologia,Norte,Médio
+3511-05,Técnico de Suporte,Técnico,2802,Tecnologia,Sul,Baixo
+2521-05,Cientista de Dados,Médio,7042,Tecnologia,Sul,Médio
+5134-05,Garçom,Superior,3154,Serviços,Norte,Médio
+5134-05,Garçom,Superior,4023,Serviços,Norte,Baixo
+7823-10,Motorista de Caminhão,Médio,12898,Logística,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Fundamental,11059,Comércio,Nordeste,Médio
+3511-05,Técnico de Suporte,Fundamental,7738,Tecnologia,Sudeste,Médio
+4211-25,Caixa de Banco,Fundamental,1852,Financeiro,Sul,Alto
+7823-10,Motorista de Caminhão,Superior,2620,Logística,Centro-Oeste,Alto
+5134-05,Garçom,Médio,6617,Serviços,Centro-Oeste,Baixo
+5134-05,Garçom,Técnico,4728,Serviços,Centro-Oeste,Baixo
+4211-25,Caixa de Banco,Superior,7122,Financeiro,Nordeste,Médio
+4211-25,Caixa de Banco,Superior,5180,Financeiro,Sul,Médio
+2515-10,Desenvolvedor de Software,Técnico,1570,Tecnologia,Sul,Baixo
+2521-05,Cientista de Dados,Superior,11301,Tecnologia,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Superior,5829,Logística,Nordeste,Médio
+3511-05,Técnico de Suporte,Fundamental,9987,Tecnologia,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Médio,5609,Logística,Sudeste,Baixo
+1414-10,Gerente Comercial,Fundamental,7778,Comércio,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Fundamental,8414,Logística,Norte,Baixo
+5211-10,Vendedor,Fundamental,11958,Comércio,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Técnico,6033,Comércio,Sudeste,Médio
+4211-25,Caixa de Banco,Superior,4083,Financeiro,Sudeste,Baixo
+2521-05,Cientista de Dados,Fundamental,12543,Tecnologia,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,8690,Tecnologia,Nordeste,Baixo
+3511-05,Técnico de Suporte,Médio,5525,Tecnologia,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Superior,3949,Tecnologia,Sul,Baixo
+3511-05,Técnico de Suporte,Médio,5768,Tecnologia,Centro-Oeste,Médio
+2521-05,Cientista de Dados,Técnico,2323,Tecnologia,Norte,Baixo
+2515-10,Desenvolvedor de Software,Médio,3008,Tecnologia,Sul,Médio
+5134-05,Garçom,Médio,1797,Serviços,Centro-Oeste,Alto
+5211-10,Vendedor,Médio,7411,Comércio,Sudeste,Médio
+3511-05,Técnico de Suporte,Médio,6863,Tecnologia,Norte,Médio
+2124-05,Analista RH,Fundamental,7545,Administrativo,Nordeste,Alto
+4211-25,Caixa de Banco,Técnico,11787,Financeiro,Nordeste,Baixo
+4110-05,Auxiliar Administrativo,Superior,3245,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Técnico,8661,Tecnologia,Sudeste,Médio
+5134-05,Garçom,Fundamental,3580,Serviços,Norte,Médio
+4110-05,Auxiliar Administrativo,Médio,9176,Administrativo,Norte,Alto
+4110-05,Auxiliar Administrativo,Fundamental,12966,Administrativo,Sudeste,Alto
+2124-05,Analista RH,Técnico,3270,Administrativo,Nordeste,Alto
+5134-05,Garçom,Superior,14148,Serviços,Centro-Oeste,Médio
+5211-10,Vendedor,Médio,5138,Comércio,Sudeste,Baixo
+4211-25,Caixa de Banco,Técnico,8095,Financeiro,Norte,Médio
+4110-05,Auxiliar Administrativo,Médio,4533,Administrativo,Sudeste,Alto
+1414-10,Gerente Comercial,Superior,13324,Comércio,Sul,Médio
+4110-05,Auxiliar Administrativo,Médio,14549,Administrativo,Sudeste,Alto
+1414-10,Gerente Comercial,Técnico,10793,Comércio,Sul,Baixo
+2521-05,Cientista de Dados,Superior,11072,Tecnologia,Centro-Oeste,Médio
+2124-05,Analista RH,Médio,13616,Administrativo,Sudeste,Alto
+4110-05,Auxiliar Administrativo,Superior,3788,Administrativo,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Técnico,3813,Tecnologia,Nordeste,Baixo
+3511-05,Técnico de Suporte,Médio,9111,Tecnologia,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Técnico,4955,Tecnologia,Sul,Baixo
+3511-05,Técnico de Suporte,Técnico,7922,Tecnologia,Sul,Médio
+4211-25,Caixa de Banco,Superior,11762,Financeiro,Sul,Baixo
+2515-10,Desenvolvedor de Software,Superior,10774,Tecnologia,Nordeste,Baixo
+4211-25,Caixa de Banco,Técnico,11241,Financeiro,Sudeste,Médio
+1414-10,Gerente Comercial,Técnico,3146,Comércio,Nordeste,Médio
+5134-05,Garçom,Fundamental,9368,Serviços,Nordeste,Baixo
+2124-05,Analista RH,Técnico,10484,Administrativo,Norte,Alto
+4110-05,Auxiliar Administrativo,Fundamental,6702,Administrativo,Nordeste,Alto
+4211-25,Caixa de Banco,Superior,10977,Financeiro,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Superior,13360,Tecnologia,Sudeste,Médio
+7823-10,Motorista de Caminhão,Superior,12785,Logística,Sudeste,Médio
+5211-10,Vendedor,Superior,8790,Comércio,Norte,Médio
+1414-10,Gerente Comercial,Técnico,14488,Comércio,Nordeste,Médio
+1414-10,Gerente Comercial,Fundamental,7413,Comércio,Sudeste,Baixo
+2124-05,Analista RH,Médio,14810,Administrativo,Centro-Oeste,Alto
+3511-05,Técnico de Suporte,Fundamental,10090,Tecnologia,Centro-Oeste,Médio
+5211-10,Vendedor,Técnico,11667,Comércio,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,5827,Administrativo,Nordeste,Alto
+4110-05,Auxiliar Administrativo,Técnico,3254,Administrativo,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Técnico,5729,Tecnologia,Norte,Baixo
+3511-05,Técnico de Suporte,Médio,4857,Tecnologia,Sudeste,Médio
+2124-05,Analista RH,Médio,8422,Administrativo,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Técnico,8712,Tecnologia,Sudeste,Médio
+7823-10,Motorista de Caminhão,Fundamental,3499,Logística,Sul,Baixo
+2124-05,Analista RH,Superior,14441,Administrativo,Sudeste,Alto
+4110-05,Auxiliar Administrativo,Superior,7240,Administrativo,Sul,Alto
+2515-10,Desenvolvedor de Software,Superior,3560,Tecnologia,Norte,Médio
+2515-10,Desenvolvedor de Software,Médio,4551,Tecnologia,Sudeste,Baixo
+5134-05,Garçom,Superior,10540,Serviços,Nordeste,Médio
+3511-05,Técnico de Suporte,Superior,14985,Tecnologia,Sudeste,Baixo
+4211-25,Caixa de Banco,Fundamental,13932,Financeiro,Sul,Baixo
+5211-10,Vendedor,Superior,6171,Comércio,Sudeste,Baixo
+2521-05,Cientista de Dados,Superior,11260,Tecnologia,Norte,Baixo
+1414-10,Gerente Comercial,Superior,6159,Comércio,Sul,Baixo
+5134-05,Garçom,Fundamental,9699,Serviços,Nordeste,Baixo
+5211-10,Vendedor,Superior,10106,Comércio,Centro-Oeste,Médio
+2124-05,Analista RH,Fundamental,13644,Administrativo,Centro-Oeste,Alto
+5211-10,Vendedor,Médio,6994,Comércio,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Médio,4192,Tecnologia,Centro-Oeste,Baixo
+5211-10,Vendedor,Médio,2598,Comércio,Sudeste,Alto
+5211-10,Vendedor,Médio,3883,Comércio,Nordeste,Baixo
+2124-05,Analista RH,Fundamental,7403,Administrativo,Nordeste,Alto
+4211-25,Caixa de Banco,Técnico,2891,Financeiro,Norte,Alto
+5211-10,Vendedor,Técnico,7468,Comércio,Norte,Médio
+2515-10,Desenvolvedor de Software,Técnico,4066,Tecnologia,Sul,Baixo
+4211-25,Caixa de Banco,Superior,2267,Financeiro,Sudeste,Alto
+5211-10,Vendedor,Médio,1773,Comércio,Sul,Alto
+2521-05,Cientista de Dados,Fundamental,5876,Tecnologia,Norte,Médio
+2515-10,Desenvolvedor de Software,Médio,9886,Tecnologia,Norte,Baixo
+2124-05,Analista RH,Médio,11002,Administrativo,Sudeste,Alto
+5211-10,Vendedor,Fundamental,3588,Comércio,Centro-Oeste,Baixo
+5211-10,Vendedor,Fundamental,3123,Comércio,Norte,Baixo
+2521-05,Cientista de Dados,Superior,3139,Tecnologia,Norte,Médio
+4211-25,Caixa de Banco,Técnico,10248,Financeiro,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Médio,13624,Logística,Norte,Médio
+2124-05,Analista RH,Técnico,14304,Administrativo,Centro-Oeste,Alto
+2124-05,Analista RH,Médio,9567,Administrativo,Nordeste,Alto
+5211-10,Vendedor,Técnico,14639,Comércio,Sudeste,Médio
+2124-05,Analista RH,Técnico,7029,Administrativo,Nordeste,Alto
+1414-10,Gerente Comercial,Técnico,4559,Comércio,Sul,Baixo
+4211-25,Caixa de Banco,Fundamental,7576,Financeiro,Sul,Médio
+7823-10,Motorista de Caminhão,Superior,2975,Logística,Sudeste,Alto
+7823-10,Motorista de Caminhão,Médio,4147,Logística,Sudeste,Médio
+5211-10,Vendedor,Fundamental,12364,Comércio,Nordeste,Médio
+4211-25,Caixa de Banco,Superior,6835,Financeiro,Norte,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,1584,Tecnologia,Sudeste,Baixo
+1414-10,Gerente Comercial,Fundamental,4424,Comércio,Sudeste,Baixo
+5211-10,Vendedor,Fundamental,2679,Comércio,Sudeste,Alto
+2515-10,Desenvolvedor de Software,Superior,9286,Tecnologia,Norte,Médio
+4110-05,Auxiliar Administrativo,Superior,11074,Administrativo,Norte,Alto
+1414-10,Gerente Comercial,Médio,9746,Comércio,Norte,Baixo
+4110-05,Auxiliar Administrativo,Superior,7066,Administrativo,Norte,Alto
+5134-05,Garçom,Técnico,6930,Serviços,Sudeste,Médio
+7823-10,Motorista de Caminhão,Superior,10202,Logística,Sudeste,Médio
+2521-05,Cientista de Dados,Médio,2471,Tecnologia,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Médio,9174,Tecnologia,Sul,Médio
+1414-10,Gerente Comercial,Técnico,9524,Comércio,Nordeste,Médio
+3511-05,Técnico de Suporte,Médio,12465,Tecnologia,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,7224,Tecnologia,Sudeste,Baixo
+5134-05,Garçom,Médio,12346,Serviços,Norte,Médio
+2515-10,Desenvolvedor de Software,Fundamental,1808,Tecnologia,Sul,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,6034,Tecnologia,Sul,Baixo
+5134-05,Garçom,Médio,12268,Serviços,Sudeste,Baixo
+5211-10,Vendedor,Técnico,4072,Comércio,Nordeste,Médio
+5211-10,Vendedor,Superior,8500,Comércio,Sudeste,Médio
+2515-10,Desenvolvedor de Software,Técnico,13671,Tecnologia,Sudeste,Baixo
+2124-05,Analista RH,Fundamental,14420,Administrativo,Norte,Alto
+3511-05,Técnico de Suporte,Superior,10582,Tecnologia,Nordeste,Baixo
+5211-10,Vendedor,Superior,8596,Comércio,Norte,Baixo
+5134-05,Garçom,Fundamental,6656,Serviços,Norte,Médio
+5211-10,Vendedor,Fundamental,10867,Comércio,Centro-Oeste,Baixo
+4110-05,Auxiliar Administrativo,Médio,14920,Administrativo,Norte,Alto
+2515-10,Desenvolvedor de Software,Médio,10512,Tecnologia,Sudeste,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,5644,Administrativo,Sudeste,Alto
+5134-05,Garçom,Médio,5031,Serviços,Norte,Médio
+4110-05,Auxiliar Administrativo,Fundamental,10724,Administrativo,Norte,Alto
+7823-10,Motorista de Caminhão,Fundamental,7615,Logística,Sudeste,Baixo
+4211-25,Caixa de Banco,Técnico,10061,Financeiro,Norte,Baixo
+2521-05,Cientista de Dados,Superior,5190,Tecnologia,Sul,Médio
+4110-05,Auxiliar Administrativo,Médio,3250,Administrativo,Centro-Oeste,Alto
+2515-10,Desenvolvedor de Software,Fundamental,5645,Tecnologia,Sul,Médio
+3511-05,Técnico de Suporte,Técnico,10317,Tecnologia,Centro-Oeste,Médio
+5211-10,Vendedor,Médio,2705,Comércio,Sul,Alto
+5134-05,Garçom,Médio,14718,Serviços,Sul,Médio
+2124-05,Analista RH,Médio,1767,Administrativo,Sudeste,Alto
+2521-05,Cientista de Dados,Superior,14530,Tecnologia,Centro-Oeste,Médio
+5211-10,Vendedor,Fundamental,13351,Comércio,Centro-Oeste,Baixo
+4110-05,Auxiliar Administrativo,Médio,14985,Administrativo,Sul,Alto
+3511-05,Técnico de Suporte,Técnico,13216,Tecnologia,Norte,Baixo
+5211-10,Vendedor,Fundamental,13307,Comércio,Norte,Baixo
+2124-05,Analista RH,Técnico,8444,Administrativo,Nordeste,Alto
+5211-10,Vendedor,Médio,6813,Comércio,Sul,Médio
+4211-25,Caixa de Banco,Fundamental,2474,Financeiro,Sudeste,Alto
+5211-10,Vendedor,Médio,4200,Comércio,Nordeste,Baixo
+2124-05,Analista RH,Fundamental,3872,Administrativo,Sudeste,Alto
+5134-05,Garçom,Superior,3552,Serviços,Nordeste,Médio
+5211-10,Vendedor,Superior,8968,Comércio,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Médio,11443,Tecnologia,Centro-Oeste,Médio
+2521-05,Cientista de Dados,Superior,13015,Tecnologia,Norte,Médio
+2124-05,Analista RH,Médio,13554,Administrativo,Nordeste,Alto
+5134-05,Garçom,Fundamental,10069,Serviços,Sul,Baixo
+4211-25,Caixa de Banco,Fundamental,8170,Financeiro,Norte,Baixo
+2124-05,Analista RH,Técnico,11498,Administrativo,Nordeste,Alto
+5134-05,Garçom,Médio,10461,Serviços,Sul,Baixo
+2521-05,Cientista de Dados,Fundamental,3095,Tecnologia,Sudeste,Médio
+2515-10,Desenvolvedor de Software,Fundamental,13981,Tecnologia,Sul,Médio
+5211-10,Vendedor,Fundamental,6506,Comércio,Sul,Baixo
+4211-25,Caixa de Banco,Fundamental,8196,Financeiro,Nordeste,Médio
+4211-25,Caixa de Banco,Fundamental,10735,Financeiro,Norte,Médio
+1414-10,Gerente Comercial,Médio,11334,Comércio,Sudeste,Baixo
+3511-05,Técnico de Suporte,Superior,6399,Tecnologia,Sudeste,Médio
+4211-25,Caixa de Banco,Superior,5275,Financeiro,Sul,Baixo
+5211-10,Vendedor,Fundamental,1615,Comércio,Nordeste,Alto
+4211-25,Caixa de Banco,Médio,6957,Financeiro,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,8508,Administrativo,Sul,Alto
+2515-10,Desenvolvedor de Software,Médio,6318,Tecnologia,Sul,Médio
+2515-10,Desenvolvedor de Software,Superior,13721,Tecnologia,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Médio,8519,Logística,Sul,Baixo
+5134-05,Garçom,Superior,14002,Serviços,Nordeste,Médio
+1414-10,Gerente Comercial,Técnico,14953,Comércio,Sul,Médio
+4211-25,Caixa de Banco,Técnico,1608,Financeiro,Centro-Oeste,Alto
+2124-05,Analista RH,Técnico,9246,Administrativo,Sul,Alto
+1414-10,Gerente Comercial,Superior,4008,Comércio,Centro-Oeste,Baixo
+2124-05,Analista RH,Fundamental,6454,Administrativo,Nordeste,Alto
+3511-05,Técnico de Suporte,Médio,5157,Tecnologia,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,9851,Administrativo,Sul,Alto
+2515-10,Desenvolvedor de Software,Técnico,8711,Tecnologia,Nordeste,Baixo
+2515-10,Desenvolvedor de Software,Técnico,9308,Tecnologia,Sul,Baixo
+4211-25,Caixa de Banco,Técnico,13944,Financeiro,Norte,Baixo
+2124-05,Analista RH,Técnico,12125,Administrativo,Sul,Alto
+7823-10,Motorista de Caminhão,Superior,14831,Logística,Sul,Médio
+4211-25,Caixa de Banco,Médio,10266,Financeiro,Norte,Médio
+2521-05,Cientista de Dados,Médio,4768,Tecnologia,Sul,Baixo
+5134-05,Garçom,Técnico,14355,Serviços,Nordeste,Médio
+7823-10,Motorista de Caminhão,Técnico,12343,Logística,Norte,Médio
+7823-10,Motorista de Caminhão,Médio,8472,Logística,Sudeste,Médio
+7823-10,Motorista de Caminhão,Fundamental,10397,Logística,Sul,Baixo
+3511-05,Técnico de Suporte,Superior,3696,Tecnologia,Sudeste,Baixo
+3511-05,Técnico de Suporte,Superior,2083,Tecnologia,Sudeste,Baixo
+1414-10,Gerente Comercial,Superior,7943,Comércio,Norte,Médio
+4211-25,Caixa de Banco,Superior,9286,Financeiro,Sul,Baixo
+5211-10,Vendedor,Médio,11059,Comércio,Nordeste,Médio
+2124-05,Analista RH,Superior,12724,Administrativo,Sul,Alto
+5211-10,Vendedor,Superior,14789,Comércio,Sudeste,Baixo
+4110-05,Auxiliar Administrativo,Técnico,8002,Administrativo,Nordeste,Alto
+2124-05,Analista RH,Técnico,2262,Administrativo,Sul,Alto
+2124-05,Analista RH,Fundamental,14817,Administrativo,Norte,Alto
+3511-05,Técnico de Suporte,Superior,4423,Tecnologia,Norte,Médio
+2521-05,Cientista de Dados,Superior,8449,Tecnologia,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Médio,10234,Tecnologia,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Médio,7875,Financeiro,Norte,Médio
+4110-05,Auxiliar Administrativo,Fundamental,5617,Administrativo,Norte,Alto
+1414-10,Gerente Comercial,Técnico,10242,Comércio,Norte,Baixo
+3511-05,Técnico de Suporte,Médio,12346,Tecnologia,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Superior,5276,Tecnologia,Centro-Oeste,Médio
+4211-25,Caixa de Banco,Técnico,5554,Financeiro,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Médio,13401,Comércio,Norte,Médio
+3511-05,Técnico de Suporte,Superior,12641,Tecnologia,Norte,Baixo
+7823-10,Motorista de Caminhão,Técnico,7603,Logística,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Médio,13296,Administrativo,Sul,Alto
+1414-10,Gerente Comercial,Médio,13853,Comércio,Centro-Oeste,Médio
+7823-10,Motorista de Caminhão,Fundamental,3376,Logística,Sul,Baixo
+5134-05,Garçom,Técnico,13184,Serviços,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Superior,10154,Tecnologia,Norte,Médio
+1414-10,Gerente Comercial,Fundamental,13249,Comércio,Centro-Oeste,Baixo
+5211-10,Vendedor,Fundamental,2961,Comércio,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Técnico,10377,Financeiro,Sul,Médio
+2521-05,Cientista de Dados,Médio,10675,Tecnologia,Sudeste,Médio
+3511-05,Técnico de Suporte,Superior,6248,Tecnologia,Nordeste,Baixo
+7823-10,Motorista de Caminhão,Técnico,1720,Logística,Norte,Alto
+4211-25,Caixa de Banco,Superior,6589,Financeiro,Nordeste,Médio
+4211-25,Caixa de Banco,Técnico,6628,Financeiro,Sul,Médio
+1414-10,Gerente Comercial,Técnico,8738,Comércio,Norte,Baixo
+4211-25,Caixa de Banco,Fundamental,14177,Financeiro,Nordeste,Baixo
+2515-10,Desenvolvedor de Software,Superior,14864,Tecnologia,Sudeste,Baixo
+5134-05,Garçom,Médio,1610,Serviços,Nordeste,Alto
+3511-05,Técnico de Suporte,Superior,2909,Tecnologia,Nordeste,Médio
+5134-05,Garçom,Médio,9013,Serviços,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Médio,10888,Tecnologia,Sul,Baixo
+3511-05,Técnico de Suporte,Superior,3272,Tecnologia,Norte,Médio
+2515-10,Desenvolvedor de Software,Médio,11209,Tecnologia,Sudeste,Médio
+5134-05,Garçom,Técnico,6102,Serviços,Nordeste,Médio
+5211-10,Vendedor,Técnico,4019,Comércio,Nordeste,Médio
+7823-10,Motorista de Caminhão,Médio,8213,Logística,Sudeste,Médio
+4211-25,Caixa de Banco,Médio,12613,Financeiro,Sul,Baixo
+2124-05,Analista RH,Fundamental,5052,Administrativo,Norte,Alto
+2124-05,Analista RH,Técnico,7423,Administrativo,Sul,Alto
+2124-05,Analista RH,Técnico,7452,Administrativo,Norte,Alto
+4110-05,Auxiliar Administrativo,Superior,5358,Administrativo,Sul,Alto
+3511-05,Técnico de Suporte,Médio,5482,Tecnologia,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Técnico,12198,Logística,Sul,Médio
+7823-10,Motorista de Caminhão,Médio,1925,Logística,Sudeste,Alto
+4110-05,Auxiliar Administrativo,Superior,12548,Administrativo,Centro-Oeste,Alto
+2515-10,Desenvolvedor de Software,Médio,3010,Tecnologia,Centro-Oeste,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,5037,Tecnologia,Sul,Baixo
+2521-05,Cientista de Dados,Superior,13469,Tecnologia,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Médio,8174,Tecnologia,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Fundamental,4260,Administrativo,Nordeste,Alto
+3511-05,Técnico de Suporte,Técnico,14145,Tecnologia,Sudeste,Baixo
+2521-05,Cientista de Dados,Superior,11238,Tecnologia,Sudeste,Baixo
+1414-10,Gerente Comercial,Técnico,7043,Comércio,Sudeste,Baixo
+4110-05,Auxiliar Administrativo,Superior,11327,Administrativo,Centro-Oeste,Alto
+3511-05,Técnico de Suporte,Fundamental,2442,Tecnologia,Centro-Oeste,Baixo
+2124-05,Analista RH,Fundamental,1803,Administrativo,Centro-Oeste,Alto
+4211-25,Caixa de Banco,Médio,5562,Financeiro,Nordeste,Baixo
+2521-05,Cientista de Dados,Técnico,2678,Tecnologia,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Superior,2345,Tecnologia,Nordeste,Médio
+5134-05,Garçom,Médio,9509,Serviços,Centro-Oeste,Baixo
+2124-05,Analista RH,Fundamental,13374,Administrativo,Norte,Alto
+2515-10,Desenvolvedor de Software,Técnico,6457,Tecnologia,Sudeste,Médio
+5134-05,Garçom,Médio,8909,Serviços,Sudeste,Médio
+3511-05,Técnico de Suporte,Técnico,2212,Tecnologia,Sudeste,Médio
+4211-25,Caixa de Banco,Fundamental,3501,Financeiro,Norte,Baixo
+7823-10,Motorista de Caminhão,Fundamental,9361,Logística,Nordeste,Médio
+5211-10,Vendedor,Médio,6435,Comércio,Norte,Baixo
+7823-10,Motorista de Caminhão,Médio,10761,Logística,Norte,Baixo
+3511-05,Técnico de Suporte,Médio,4869,Tecnologia,Nordeste,Médio
+2515-10,Desenvolvedor de Software,Superior,14110,Tecnologia,Sul,Médio
+5211-10,Vendedor,Técnico,10568,Comércio,Sul,Baixo
+7823-10,Motorista de Caminhão,Médio,9116,Logística,Sudeste,Médio
+2124-05,Analista RH,Superior,10929,Administrativo,Nordeste,Alto
+4110-05,Auxiliar Administrativo,Fundamental,6782,Administrativo,Sudeste,Alto
+1414-10,Gerente Comercial,Médio,5934,Comércio,Sul,Médio
+5211-10,Vendedor,Técnico,13443,Comércio,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Técnico,2766,Tecnologia,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Superior,13024,Tecnologia,Nordeste,Médio
+1414-10,Gerente Comercial,Fundamental,12818,Comércio,Norte,Baixo
+4110-05,Auxiliar Administrativo,Fundamental,5081,Administrativo,Sudeste,Alto
+5211-10,Vendedor,Técnico,2885,Comércio,Sudeste,Alto
+2521-05,Cientista de Dados,Médio,3578,Tecnologia,Nordeste,Baixo
+2124-05,Analista RH,Técnico,13010,Administrativo,Sul,Alto
+4110-05,Auxiliar Administrativo,Médio,4200,Administrativo,Norte,Alto
+2124-05,Analista RH,Médio,11831,Administrativo,Centro-Oeste,Alto
+2521-05,Cientista de Dados,Fundamental,13037,Tecnologia,Sul,Baixo
+2521-05,Cientista de Dados,Técnico,9460,Tecnologia,Sul,Médio
+7823-10,Motorista de Caminhão,Fundamental,13127,Logística,Sudeste,Médio
+4211-25,Caixa de Banco,Médio,10502,Financeiro,Sudeste,Médio
+4211-25,Caixa de Banco,Médio,2756,Financeiro,Centro-Oeste,Alto
+2515-10,Desenvolvedor de Software,Médio,8558,Tecnologia,Norte,Baixo
+4110-05,Auxiliar Administrativo,Médio,5386,Administrativo,Nordeste,Alto
+4211-25,Caixa de Banco,Superior,2956,Financeiro,Sul,Alto
+2124-05,Analista RH,Superior,9576,Administrativo,Norte,Alto
+5211-10,Vendedor,Médio,7421,Comércio,Sul,Médio
+4110-05,Auxiliar Administrativo,Técnico,1904,Administrativo,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Superior,6474,Tecnologia,Centro-Oeste,Baixo
+3511-05,Técnico de Suporte,Técnico,5210,Tecnologia,Norte,Médio
+5134-05,Garçom,Médio,10722,Serviços,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Fundamental,12318,Logística,Sul,Médio
+5134-05,Garçom,Médio,13637,Serviços,Nordeste,Baixo
+5211-10,Vendedor,Técnico,3897,Comércio,Norte,Baixo
+5134-05,Garçom,Superior,6114,Serviços,Sudeste,Médio
+5134-05,Garçom,Médio,14666,Serviços,Nordeste,Médio
+1414-10,Gerente Comercial,Técnico,8321,Comércio,Sul,Baixo
+4211-25,Caixa de Banco,Fundamental,1922,Financeiro,Centro-Oeste,Alto
+2521-05,Cientista de Dados,Superior,10838,Tecnologia,Norte,Médio
+5211-10,Vendedor,Superior,13844,Comércio,Nordeste,Médio
+2521-05,Cientista de Dados,Fundamental,7911,Tecnologia,Nordeste,Médio
+2124-05,Analista RH,Técnico,13157,Administrativo,Centro-Oeste,Alto
+7823-10,Motorista de Caminhão,Técnico,14328,Logística,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,3002,Tecnologia,Nordeste,Baixo
+4211-25,Caixa de Banco,Fundamental,9380,Financeiro,Norte,Médio
+2124-05,Analista RH,Fundamental,1866,Administrativo,Nordeste,Alto
+2515-10,Desenvolvedor de Software,Técnico,11387,Tecnologia,Sudeste,Médio
+4211-25,Caixa de Banco,Fundamental,7890,Financeiro,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Técnico,4090,Tecnologia,Centro-Oeste,Baixo
+2521-05,Cientista de Dados,Superior,8135,Tecnologia,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Superior,5628,Logística,Norte,Médio
+2515-10,Desenvolvedor de Software,Superior,7607,Tecnologia,Centro-Oeste,Médio
+5211-10,Vendedor,Médio,10679,Comércio,Nordeste,Médio
+2521-05,Cientista de Dados,Técnico,11356,Tecnologia,Sudeste,Médio
+5134-05,Garçom,Fundamental,4375,Serviços,Sul,Médio
+2124-05,Analista RH,Superior,7352,Administrativo,Nordeste,Alto
+1414-10,Gerente Comercial,Superior,12464,Comércio,Sul,Médio
+2515-10,Desenvolvedor de Software,Médio,6590,Tecnologia,Sudeste,Médio
+2521-05,Cientista de Dados,Fundamental,1514,Tecnologia,Norte,Médio
+2521-05,Cientista de Dados,Superior,10177,Tecnologia,Norte,Médio
+3511-05,Técnico de Suporte,Fundamental,10028,Tecnologia,Sul,Médio
+7823-10,Motorista de Caminhão,Fundamental,10233,Logística,Nordeste,Médio
+2521-05,Cientista de Dados,Técnico,11153,Tecnologia,Nordeste,Baixo
+3511-05,Técnico de Suporte,Médio,6212,Tecnologia,Sul,Baixo
+1414-10,Gerente Comercial,Médio,8944,Comércio,Sul,Médio
+2515-10,Desenvolvedor de Software,Médio,4744,Tecnologia,Sudeste,Médio
+3511-05,Técnico de Suporte,Técnico,13642,Tecnologia,Sul,Baixo
+5211-10,Vendedor,Técnico,3443,Comércio,Centro-Oeste,Médio
+5134-05,Garçom,Técnico,8898,Serviços,Sul,Médio
+5211-10,Vendedor,Técnico,6187,Comércio,Norte,Baixo
+2521-05,Cientista de Dados,Fundamental,14617,Tecnologia,Sul,Médio
+2521-05,Cientista de Dados,Superior,10318,Tecnologia,Centro-Oeste,Baixo
+2515-10,Desenvolvedor de Software,Técnico,1783,Tecnologia,Centro-Oeste,Baixo
+1414-10,Gerente Comercial,Médio,13044,Comércio,Norte,Médio
+5211-10,Vendedor,Fundamental,3632,Comércio,Sul,Baixo
+2521-05,Cientista de Dados,Médio,2092,Tecnologia,Centro-Oeste,Médio
+1414-10,Gerente Comercial,Médio,6034,Comércio,Sul,Baixo
+2124-05,Analista RH,Fundamental,11988,Administrativo,Nordeste,Alto
+7823-10,Motorista de Caminhão,Fundamental,5767,Logística,Centro-Oeste,Baixo
+5134-05,Garçom,Fundamental,12942,Serviços,Sul,Baixo
+4211-25,Caixa de Banco,Superior,9634,Financeiro,Norte,Médio
+2124-05,Analista RH,Fundamental,7343,Administrativo,Centro-Oeste,Alto
+7823-10,Motorista de Caminhão,Médio,7379,Logística,Nordeste,Médio
+2124-05,Analista RH,Superior,2874,Administrativo,Nordeste,Alto
+5134-05,Garçom,Fundamental,14919,Serviços,Nordeste,Médio
+5134-05,Garçom,Superior,9660,Serviços,Norte,Baixo
+2521-05,Cientista de Dados,Médio,1545,Tecnologia,Sul,Médio
+7823-10,Motorista de Caminhão,Técnico,9796,Logística,Nordeste,Médio
+5211-10,Vendedor,Superior,11242,Comércio,Sul,Baixo
+7823-10,Motorista de Caminhão,Superior,9470,Logística,Norte,Médio
+5211-10,Vendedor,Médio,4804,Comércio,Norte,Médio
+2515-10,Desenvolvedor de Software,Técnico,12805,Tecnologia,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Superior,10592,Administrativo,Norte,Alto
+5134-05,Garçom,Superior,12247,Serviços,Nordeste,Médio
+7823-10,Motorista de Caminhão,Superior,10656,Logística,Sul,Baixo
+1414-10,Gerente Comercial,Médio,12076,Comércio,Sudeste,Médio
+5134-05,Garçom,Fundamental,7160,Serviços,Sul,Baixo
+4211-25,Caixa de Banco,Superior,8397,Financeiro,Norte,Baixo
+4211-25,Caixa de Banco,Superior,7185,Financeiro,Centro-Oeste,Médio
+2124-05,Analista RH,Fundamental,12579,Administrativo,Norte,Alto
+7823-10,Motorista de Caminhão,Técnico,3241,Logística,Sudeste,Médio
+4211-25,Caixa de Banco,Médio,8261,Financeiro,Centro-Oeste,Médio
+4110-05,Auxiliar Administrativo,Superior,7582,Administrativo,Centro-Oeste,Alto
+3511-05,Técnico de Suporte,Médio,8207,Tecnologia,Norte,Baixo
+1414-10,Gerente Comercial,Superior,14554,Comércio,Norte,Baixo
+5134-05,Garçom,Médio,13504,Serviços,Nordeste,Baixo
+4211-25,Caixa de Banco,Técnico,9887,Financeiro,Nordeste,Baixo
+2515-10,Desenvolvedor de Software,Técnico,5423,Tecnologia,Sul,Baixo
+2521-05,Cientista de Dados,Médio,7957,Tecnologia,Norte,Médio
+4110-05,Auxiliar Administrativo,Superior,13414,Administrativo,Sudeste,Alto
+4211-25,Caixa de Banco,Superior,3334,Financeiro,Sul,Baixo
+2515-10,Desenvolvedor de Software,Técnico,4084,Tecnologia,Sudeste,Médio
+1414-10,Gerente Comercial,Fundamental,5152,Comércio,Sul,Baixo
+7823-10,Motorista de Caminhão,Técnico,14605,Logística,Sudeste,Médio
+2124-05,Analista RH,Superior,8293,Administrativo,Norte,Alto
+1414-10,Gerente Comercial,Superior,3309,Comércio,Sudeste,Baixo
+1414-10,Gerente Comercial,Fundamental,5131,Comércio,Sudeste,Baixo
+2515-10,Desenvolvedor de Software,Fundamental,4339,Tecnologia,Nordeste,Médio
+2124-05,Analista RH,Técnico,6584,Administrativo,Centro-Oeste,Alto
+2124-05,Analista RH,Médio,11911,Administrativo,Sudeste,Alto
+2124-05,Analista RH,Fundamental,14707,Administrativo,Centro-Oeste,Alto
+5134-05,Garçom,Superior,11575,Serviços,Norte,Baixo
+2124-05,Analista RH,Fundamental,3518,Administrativo,Sudeste,Alto
+3511-05,Técnico de Suporte,Fundamental,6580,Tecnologia,Sudeste,Médio
+2521-05,Cientista de Dados,Técnico,7823,Tecnologia,Sul,Baixo
+2124-05,Analista RH,Superior,3829,Administrativo,Centro-Oeste,Alto
+3511-05,Técnico de Suporte,Técnico,12433,Tecnologia,Sudeste,Médio
+2521-05,Cientista de Dados,Superior,10832,Tecnologia,Sudeste,Médio
+2515-10,Desenvolvedor de Software,Técnico,9163,Tecnologia,Centro-Oeste,Baixo
+2124-05,Analista RH,Fundamental,13705,Administrativo,Centro-Oeste,Alto
+2521-05,Cientista de Dados,Médio,13492,Tecnologia,Centro-Oeste,Médio
+3511-05,Técnico de Suporte,Técnico,11654,Tecnologia,Norte,Baixo
+4211-25,Caixa de Banco,Médio,13105,Financeiro,Sul,Médio
+5211-10,Vendedor,Médio,4236,Comércio,Centro-Oeste,Médio
+2521-05,Cientista de Dados,Médio,7744,Tecnologia,Sul,Médio
+5211-10,Vendedor,Médio,2832,Comércio,Centro-Oeste,Alto
+5211-10,Vendedor,Superior,4324,Comércio,Sudeste,Médio
+4211-25,Caixa de Banco,Superior,7815,Financeiro,Centro-Oeste,Baixo
+5134-05,Garçom,Médio,2775,Serviços,Centro-Oeste,Alto
+3511-05,Técnico de Suporte,Superior,9008,Tecnologia,Norte,Médio
+5211-10,Vendedor,Fundamental,11812,Comércio,Centro-Oeste,Baixo
+2124-05,Analista RH,Fundamental,8518,Administrativo,Sul,Alto
+1414-10,Gerente Comercial,Fundamental,6940,Comércio,Centro-Oeste,Médio
+2515-10,Desenvolvedor de Software,Médio,13490,Tecnologia,Centro-Oeste,Baixo
+5211-10,Vendedor,Superior,2977,Comércio,Sul,Alto
+4211-25,Caixa de Banco,Superior,8092,Financeiro,Sudeste,Médio
+4110-05,Auxiliar Administrativo,Técnico,9409,Administrativo,Centro-Oeste,Alto
+5211-10,Vendedor,Fundamental,4435,Comércio,Sudeste,Médio
+5134-05,Garçom,Técnico,2656,Serviços,Sudeste,Alto
+5211-10,Vendedor,Superior,3424,Comércio,Nordeste,Médio
+2124-05,Analista RH,Superior,10924,Administrativo,Norte,Alto
+2521-05,Cientista de Dados,Técnico,2859,Tecnologia,Centro-Oeste,Baixo
+7823-10,Motorista de Caminhão,Fundamental,13329,Logística,Norte,Médio
+4211-25,Caixa de Banco,Médio,10388,Financeiro,Sudeste,Baixo
+5211-10,Vendedor,Médio,1727,Comércio,Sul,Alto
+4110-05,Auxiliar Administrativo,Médio,10153,Administrativo,Norte,Alto
+2515-10,Desenvolvedor de Software,Técnico,4386,Tecnologia,Sul,Médio
+3511-05,Técnico de Suporte,Técnico,3862,Tecnologia,Sudeste,Médio
+4211-25,Caixa de Banco,Superior,2434,Financeiro,Nordeste,Alto
+5211-10,Vendedor,Superior,9196,Comércio,Sudeste,Médio
+3511-05,Técnico de Suporte,Técnico,11744,Tecnologia,Sudeste,Baixo
