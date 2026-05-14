@@ -45,6 +45,32 @@ df = pd.read_csv(
     encoding="latin1"
 )
 
+df["risco_automacao"] = (
+    df["risco_automacao"]
+    .astype(str)
+    .str.strip()
+    .replace({
+        "MÃ©dio": "Médio",
+        "Medio": "Médio"
+    })
+)
+
+df["setor"] = (
+    df["setor"]
+    .astype(str)
+    .str.strip()
+)
+
+df["regiao"] = (
+    df["regiao"]
+    .astype(str)
+    .str.strip()
+)
+
+medio = len(
+    df[df["risco_automacao"] == "Médio"]
+)
+
 # ==========================================
 # MAPEAMENTOS
 # ==========================================
