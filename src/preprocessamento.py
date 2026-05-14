@@ -1,5 +1,6 @@
 import pandas as pd
-import numpy as np
+from sklearn.preprocessing import LabelEncoder
+
 
 # ==========================================
 # CARREGAR DADOS
@@ -7,15 +8,24 @@ import numpy as np
 
 def carregar_dados(caminho_arquivo):
 
-    df = pd.read_csv(
-        caminho_arquivo,
-        encoding="latin1"
-    )
+    try:
 
-    print("\nDados carregados com sucesso!")
-    print(df.head())
+        df = pd.read_csv(
+            caminho_arquivo,
+            encoding="latin1"
+        )
 
-    return df
+        print("\nDados carregados com sucesso!")
+        print(df.head())
+
+        return df
+
+    except Exception as e:
+
+        print(f"Erro ao carregar dados: {e}")
+
+        return None
+
 
 # ==========================================
 # LIMPEZA
@@ -27,73 +37,41 @@ def limpar_dados(df):
 
     df = df.dropna()
 
-    # ==========================================
-    # CRIAR FEATURES ARTIFICIAIS
-    # ==========================================
+    print("\nQuantidade de registros após limpeza:")
+    print(df.shape)
 
-    np.random.seed(42)
+    return df
 
-    df["indice"] = np.random.randint(
-        0,
-        100,
-        len(df)
-    )
 
-    df["crescimento"] = np.random.randint(
-        -20,
-        20,
-        len(df)
-    )
+# ==========================================
+# PREPARAÇÃO
+# ==========================================
 
-    # ==========================================
-    # CONVERTER TEXTO PARA NÚMERO
-    # ==========================================
-
-    escolaridade_map = {
-        "Fundamental": 0,
-        "Médio": 1,
-        "Técnico": 2,
-        "Superior": 3,
-        "Pós-graduação": 4
-    }
-
-    setor_map = {
-        "Administrativo": 0,
-        "Financeiro": 1,
-        "Logística": 2,
-        "Tecnologia": 3,
-        "Saúde": 4,
-        "Educação": 5,
-        "Indústria": 6
-    }
-
-    regiao_map = {
-        "Norte": 0,
-        "Nordeste": 1,
-        "Centro-Oeste": 2,
-        "Sudeste": 3,
-        "Sul": 4
-    }
-
-    df["escolaridade"] = df["escolaridade"].map(
-        escolaridade_map
-    )
-
-    df["setor"] = df["setor"].map(
-        setor_map
-    )
-
-    df["regiao"] = df["regiao"].map(
-        regiao_map
-    )
-
-    # ==========================================
-    # LIMPEZA FINAL
-    # ==========================================
+def preparar_dados(df):
 
     df = df.dropna()
 
-    print("\nQuantidade de registros após limpeza:")
-    print(df.shape)
+    # encoders
+    le_escolaridade = LabelEncoder()
+    le_setor = LabelEncoder()
+    le_regiao = LabelEncoder()
+    le_risco = LabelEncoder()
+
+    # transformar categorias em números
+    df["escolaridade"] = le_escolaridade.fit_transform(
+        df["escolaridade"]
+    )
+
+    df["setor"] = le_setor.fit_transform(
+        df["setor"]
+    )
+
+    df["regiao"] = le_regiao.fit_transform(
+        df["regiao"]
+    )
+
+    df["risco_automacao"] = le_risco.fit_transform(
+        df["risco_automacao"]
+    )
 
     return df

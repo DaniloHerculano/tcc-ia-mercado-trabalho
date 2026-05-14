@@ -1,35 +1,54 @@
+import os
 import pandas as pd
-
-from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
 
 from sklearn.ensemble import RandomForestClassifier
-
 from sklearn.linear_model import LogisticRegression
 
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
-from sklearn.metrics import (
-    accuracy_score,
-    precision_score,
-    recall_score,
-    f1_score
-)
+from preprocessamento import preparar_dados
 
+# ==========================================
+# COMPARAÇÃO DE MODELOS
+# ==========================================
 
 def comparar_modelos(df):
 
-    X = df[
-        [
-            "indice",
-            "crescimento",
-            "renda",
-            "escolaridade",
-            "setor",
-            "regiao"
-        ]
+    # criar pasta caso não exista
+    os.makedirs(
+        "output/graficos",
+        exist_ok=True
+    )
+
+    # preparar dados
+    df = preparar_dados(df)
+
+    # ==========================================
+    # FEATURES
+    # ==========================================
+
+    FEATURES = [
+        "escolaridade",
+        "renda",
+        "setor",
+        "regiao"
     ]
 
-    y = df["risco_automacao"]
+    TARGET = "risco_automacao"
+
+    # ==========================================
+    # X e Y
+    # ==========================================
+
+    X = df[FEATURES]
+
+    y = df[TARGET]
+
+    # ==========================================
+    # DIVISÃO TREINO / TESTE
+    # ==========================================
 
     X_train, X_test, y_train, y_test = train_test_split(
         X,
@@ -38,38 +57,102 @@ def comparar_modelos(df):
         random_state=42
     )
 
-    modelos = {
-        "Random Forest": RandomForestClassifier(),
-        "Logistic Regression": LogisticRegression(max_iter=1000),
-        "Decision Tree": DecisionTreeClassifier()
-    }
+    # ==========================================
+    # RANDOM FOREST
+    # ==========================================
 
-    resultados = []
+    rf = RandomForestClassifier(
+        n_estimators=100,
+        random_state=42
+    )
 
-    for nome, modelo in modelos.items():
+    rf.fit(X_train, y_train)
 
-        modelo.fit(X_train, y_train)
+    pred_rf = rf.predict(X_test)
 
-        y_pred = modelo.predict(X_test)
+    acc_rf = accuracy_score(
+        y_test,
+        pred_rf
+    )
 
-        resultados.append({
-            "Modelo": nome,
-            "Accuracy": accuracy_score(y_test, y_pred),
-            "Precision": precision_score(
-                y_test,
-                y_pred,
-                average="weighted"
-            ),
-            "Recall": recall_score(
-                y_test,
-                y_pred,
-                average="weighted"
-            ),
-            "F1-Score": f1_score(
-                y_test,
-                y_pred,
-                average="weighted"
-            )
-        })
+    # ==========================================
+    # LOGISTIC REGRESSION
+    # ==========================================
 
-    return pd.DataFrame(resultados)
+    lr = LogisticRegression(
+        max_iter=5000
+    )
+
+    lr.fit(X_train, y_train)
+
+    pred_lr = lr.predict(X_test)
+
+    acc_lr = accuracy_score(
+        y_test,
+        pred_lr
+    )
+
+    # ==========================================
+    # RESULTADOS
+    # ==========================================
+
+    resultados = pd.DataFrame({
+
+        "Modelo": [
+            "Random Forest",
+            "Logistic Regression"
+        ],
+
+        "Accuracy": [
+            acc_rf,
+            acc_lr
+        ]
+    })
+
+    print("\nResultado dos modelos:")
+    print(resultados)
+
+    # ==========================================
+    # GRÁFICO
+    # ==========================================
+
+    plt.figure(figsize=(8, 5))
+
+    plt.bar(
+        resultados["Modelo"],
+        resultados["Accuracy"]
+    )
+
+    plt.ylabel("Accuracy")
+
+    plt.title(
+        "Comparação de Modelos"
+    )
+
+    plt.ylim(0, 1)
+
+    # mostrar valores no gráfico
+    for i, v in enumerate(resultados["Accuracy"]):
+
+        plt.text(
+            i,
+            v + 0.02,
+            f"{v:.2f}",
+            ha="center"
+        )
+
+    # salvar gráfico
+    plt.savefig(
+        "output/graficos/comparacao_modelos.png",
+        bbox_inches="tight"
+    )
+
+    plt.close()
+
+    print("\nComparação de modelos concluída!")
+    print(
+        "Gráfico salvo em: "
+        "output/graficos/comparacao_modelos.png"
+    )
+
+    return resultados

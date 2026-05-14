@@ -20,6 +20,8 @@ from avaliacao_modelo import (
     gerar_relatorio_classificacao
 )
 
+from comparacao_modelos import comparar_modelos
+
 CAMINHO_ARQUIVO = "data/dados_ocupacoes.csv"
 
 
@@ -46,8 +48,9 @@ def main():
         y_pred
     )
 
-    print("\nProjeto executado com sucesso!")
+    comparar_modelos(df)
 
+    print("\nProjeto executado com sucesso!")
 
 if __name__ == "__main__":
     main()

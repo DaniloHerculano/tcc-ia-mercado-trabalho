@@ -5,20 +5,12 @@ modelo = joblib.load(
     "output/modelos/random_forest.pkl"
 )
 
-FEATURES = [
-    "indice",
-    "crescimento",
-    "renda",
+FEATURES_MODELO = [
     "escolaridade",
+    "renda",
     "setor",
     "regiao"
 ]
-
-MAP_RISCO = {
-    0: "🟢 Baixo",
-    1: "🟡 Médio",
-    2: "🔴 Alto"
-}
 
 # ==========================================
 # PREVISÃO INDIVIDUAL
@@ -28,13 +20,19 @@ def prever_risco(dados):
 
     df = pd.DataFrame([dados])
 
-    df = df[FEATURES]
+    df = df[FEATURES_MODELO]
 
-    previsao = modelo.predict(df)[0]
+    previsao = modelo.predict(df)
 
-    return MAP_RISCO.get(
-        previsao,
-        str(previsao)
+    mapa = {
+        0: "🟢 Baixo",
+        1: "🟡 Médio",
+        2: "🔴 Alto"
+    }
+
+    return mapa.get(
+        previsao[0],
+        str(previsao[0])
     )
 
 # ==========================================
@@ -43,12 +41,18 @@ def prever_risco(dados):
 
 def prever_em_lote(df):
 
-    df_modelo = df[FEATURES]
+    X = df[FEATURES_MODELO]
 
-    previsoes = modelo.predict(df_modelo)
+    previsoes = modelo.predict(X)
+
+    mapa = {
+        0: "Baixo",
+        1: "Médio",
+        2: "Alto"
+    }
 
     df["risco_previsto"] = [
-        MAP_RISCO.get(p, str(p))
+        mapa.get(p, p)
         for p in previsoes
     ]
 

@@ -589,6 +589,37 @@ elif pagina == "🏆 Ranking":
     )
 
 # ==========================================
+# COMPARAÇÃO DE MODELOS
+# ==========================================
+
+elif pagina == "⚔️ Comparação de Modelos":
+
+    st.title("⚔️ Comparação de Modelos")
+
+    st.markdown("""
+    Comparação entre os algoritmos utilizados
+    no projeto de Machine Learning.
+    """)
+
+    caminho = (
+        "output/graficos/comparacao_modelos.png"
+    )
+
+    if os.path.exists(caminho):
+
+        st.image(
+            caminho,
+            caption="Comparação de Accuracy",
+            width='stretch'
+        )
+
+    else:
+
+        st.error(
+            "Gráfico não encontrado."
+        )
+
+# ==========================================
 # SOBRE
 # ==========================================
 

@@ -1,21 +1,17 @@
-import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import classification_report
 import joblib
 import os
 
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import classification_report
-
 # ==========================================
-# FEATURES OFICIAIS DO MODELO
+# FEATURES REAIS DO DATASET
 # ==========================================
 
 FEATURES = [
-    "indice",
-    "crescimento",
-    "renda",
     "escolaridade",
+    "renda",
     "setor",
     "regiao"
 ]
@@ -26,20 +22,36 @@ FEATURES = [
 
 def treinar_modelo(df):
 
-    # Encoder do alvo
-    le = LabelEncoder()
+    # encoders
+    le_escolaridade = LabelEncoder()
+    le_setor = LabelEncoder()
+    le_regiao = LabelEncoder()
+    le_risco = LabelEncoder()
 
-    df["risco_automacao"] = le.fit_transform(
+    # transformar texto em número
+    df["escolaridade"] = le_escolaridade.fit_transform(
+        df["escolaridade"]
+    )
+
+    df["setor"] = le_setor.fit_transform(
+        df["setor"]
+    )
+
+    df["regiao"] = le_regiao.fit_transform(
+        df["regiao"]
+    )
+
+    df["risco_automacao"] = le_risco.fit_transform(
         df["risco_automacao"]
     )
 
-    # Features
+    # features
     X = df[FEATURES]
 
-    # Target
+    # target
     y = df["risco_automacao"]
 
-    # Divisão treino/teste
+    # split
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
@@ -47,26 +59,31 @@ def treinar_modelo(df):
         random_state=42
     )
 
-    # Modelo
+    # modelo
     modelo = RandomForestClassifier(
-        n_estimators=200,
+        n_estimators=100,
         random_state=42
     )
 
     modelo.fit(X_train, y_train)
 
-    # Previsões
     y_pred = modelo.predict(X_test)
 
     print("\nRelatório:")
-    print(classification_report(y_test, y_pred))
+    print(
+        classification_report(
+            y_test,
+            y_pred
+        )
+    )
 
-    # cria pasta automaticamente
+    # criar pasta
     os.makedirs(
         "output/modelos",
         exist_ok=True
     )
 
+    # salvar modelo
     joblib.dump(
         modelo,
         "output/modelos/random_forest.pkl"
