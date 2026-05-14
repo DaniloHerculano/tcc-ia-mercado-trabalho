@@ -454,34 +454,68 @@ elif pagina == "🔥 Heatmap":
 
     try:
 
-        colunas_numericas = df.select_dtypes(
-            include=["int64", "float64"]
+        df_heat = df.copy()
+
+        # ======================================
+        # CONVERTER TEXTO PARA NÚMERO
+        # ======================================
+
+        df_heat["escolaridade"] = (
+            df_heat["escolaridade"]
+            .map(ESCOLARIDADE_MAP)
         )
 
-        if colunas_numericas.shape[1] < 2:
+        df_heat["setor"] = (
+            df_heat["setor"]
+            .map(SETOR_MAP)
+        )
 
-            st.warning(
-                "Poucas colunas numéricas."
-            )
+        df_heat["regiao"] = (
+            df_heat["regiao"]
+            .map(REGIAO_MAP)
+        )
 
-        else:
+        # ======================================
+        # CONVERTER RISCO
+        # ======================================
 
-            corr = (
-                colunas_numericas.corr()
-            )
+        risco_map = {
+            "Baixo": 0,
+            "Médio": 1,
+            "Alto": 2
+        }
 
-            fig, ax = plt.subplots(
-                figsize=(10, 6)
-            )
+        df_heat["risco_automacao"] = (
+            df_heat["risco_automacao"]
+            .map(risco_map)
+        )
 
-            sns.heatmap(
-                corr,
-                annot=True,
-                cmap="Blues",
-                ax=ax
-            )
+        # ======================================
+        # COLUNAS NUMÉRICAS
+        # ======================================
 
-            st.pyplot(fig)
+        colunas = [
+            "renda",
+            "escolaridade",
+            "setor",
+            "regiao",
+            "risco_automacao"
+        ]
+
+        corr = df_heat[colunas].corr()
+
+        fig, ax = plt.subplots(
+            figsize=(10, 6)
+        )
+
+        sns.heatmap(
+            corr,
+            annot=True,
+            cmap="Blues",
+            ax=ax
+        )
+
+        st.pyplot(fig)
 
     except Exception as e:
 
