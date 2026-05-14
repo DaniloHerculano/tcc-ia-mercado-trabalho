@@ -1,17 +1,18 @@
-from main import main
-import os
-if not os.path.exists("output/modelos/random_forest.pkl"):
-    main()
 import streamlit as st
 import pandas as pd
 import joblib
 import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
-from previsao import prever_risco, prever_em_lote
+import os
+
+from previsao import (
+    prever_risco,
+    prever_em_lote
+)
 
 # ==========================================
-# CONFIGURAÇÃO
+# CONFIG
 # ==========================================
 
 st.set_page_config(
@@ -19,7 +20,29 @@ st.set_page_config(
     layout="wide"
 )
 
-modelo = joblib.load("output/modelos/random_forest.pkl")
+# ==========================================
+# TREINAR MODELO SE NÃO EXISTIR
+# ==========================================
+
+if not os.path.exists(
+    "output/modelos/random_forest.pkl"
+):
+
+    from main import main
+    main()
+
+modelo = joblib.load(
+    "output/modelos/random_forest.pkl"
+)
+
+# ==========================================
+# DADOS
+# ==========================================
+
+df = pd.read_csv(
+    "data/dados_ocupacoes.csv",
+    encoding="latin1"
+)
 
 # ==========================================
 # MAPEAMENTOS
@@ -52,48 +75,180 @@ REGIAO_MAP = {
 }
 
 # ==========================================
-# MENU LATERAL
+# MENU
 # ==========================================
 
 st.sidebar.title("📌 Navegação")
 
 pagina = st.sidebar.radio(
-    "Selecione uma tela:",
+    "Selecione:",
     [
-        "📊 Visão Geral",
+        "📊 Dashboard",
         "🔍 Previsão Individual",
         "📂 Previsão em Lote",
         "📈 Feature Importance",
         "🔥 Heatmap",
-        "🧠 SHAP",
-        "⚔️ Comparação de Modelos",
+        "📉 SHAP",
         "🏆 Ranking",
         "ℹ️ Sobre"
     ]
 )
 
 # ==========================================
-# VISÃO GERAL
+# DASHBOARD
 # ==========================================
 
-if pagina == "📊 Visão Geral":
+if pagina == "📊 Dashboard":
 
     st.title("🤖 IA e Mercado de Trabalho")
 
     st.markdown("""
-    Dashboard desenvolvido para análise do impacto da Inteligência Artificial
-    sobre ocupações profissionais utilizando Machine Learning.
-
-    Modelo utilizado:
-    - Random Forest
-    - Python
-    - Scikit-Learn
-    - Streamlit
+    Plataforma de análise do impacto da Inteligência Artificial
+    nas profissões utilizando Machine Learning.
     """)
 
-    st.image(
-        "output/graficos/distribuicao_risco.png",
-        use_container_width=True
+    # ======================================
+    # KPIs
+    # ======================================
+
+    total = len(df)
+
+    alto = len(
+        df[df["risco_automacao"] == "Alto"]
+    )
+
+    medio = len(
+        df[df["risco_automacao"] == "Médio"]
+    )
+
+    baixo = len(
+        df[df["risco_automacao"] == "Baixo"]
+    )
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    col1.metric(
+        "Total de Profissões",
+        total
+    )
+
+    col2.metric(
+        "Alto Risco",
+        alto
+    )
+
+    col3.metric(
+        "Médio Risco",
+        medio
+    )
+
+    col4.metric(
+        "Baixo Risco",
+        baixo
+    )
+
+    st.divider()
+
+    # ======================================
+    # FILTROS
+    # ======================================
+
+    colf1, colf2 = st.columns(2)
+
+    with colf1:
+
+        setor_filtro = st.selectbox(
+            "Filtrar por setor",
+            ["Todos"] + sorted(
+                df["setor"].dropna().unique()
+                .tolist()
+            )
+        )
+
+    with colf2:
+
+        regiao_filtro = st.selectbox(
+            "Filtrar por região",
+            ["Todas"] + sorted(
+                df["regiao"].dropna().unique()
+                .tolist()
+            )
+        )
+
+    busca = st.text_input(
+        "🔎 Buscar profissão"
+    )
+
+    # ======================================
+    # APLICAR FILTROS
+    # ======================================
+
+    df_filtrado = df.copy()
+
+    if setor_filtro != "Todos":
+
+        df_filtrado = df_filtrado[
+            df_filtrado["setor"]
+            == setor_filtro
+        ]
+
+    if regiao_filtro != "Todas":
+
+        df_filtrado = df_filtrado[
+            df_filtrado["regiao"]
+            == regiao_filtro
+        ]
+
+    if busca:
+
+        df_filtrado = df_filtrado[
+            df_filtrado["ocupacao"]
+            .str.contains(
+                busca,
+                case=False,
+                na=False
+            )
+        ]
+
+    st.divider()
+
+    # ======================================
+    # GRÁFICO INTERATIVO
+    # ======================================
+
+    risco_setor = (
+        df_filtrado.groupby(
+            ["setor", "risco_automacao"]
+        )
+        .size()
+        .reset_index(name="quantidade")
+    )
+
+    fig = px.bar(
+        risco_setor,
+        x="setor",
+        y="quantidade",
+        color="risco_automacao",
+        barmode="group",
+        title="Distribuição de Risco por Setor"
+    )
+
+    st.plotly_chart(
+        fig,
+        width='stretch'
+    )
+
+    # ======================================
+    # TABELA
+    # ======================================
+
+    st.subheader(
+        "📋 Dados das Ocupações"
+    )
+
+    st.dataframe(
+        df_filtrado,
+        width='stretch'
     )
 
 # ==========================================
@@ -107,6 +262,7 @@ elif pagina == "🔍 Previsão Individual":
     col1, col2, col3 = st.columns(3)
 
     with col1:
+
         indice = st.slider(
             "Índice de Automação",
             0,
@@ -115,6 +271,7 @@ elif pagina == "🔍 Previsão Individual":
         )
 
     with col2:
+
         crescimento = st.slider(
             "Crescimento (%)",
             -20,
@@ -123,6 +280,7 @@ elif pagina == "🔍 Previsão Individual":
         )
 
     with col3:
+
         renda = st.number_input(
             "Renda Média",
             1000,
@@ -133,21 +291,30 @@ elif pagina == "🔍 Previsão Individual":
     col4, col5, col6 = st.columns(3)
 
     with col4:
+
         escolaridade_txt = st.selectbox(
             "Escolaridade",
-            list(ESCOLARIDADE_MAP.keys())
+            list(
+                ESCOLARIDADE_MAP.keys()
+            )
         )
 
     with col5:
+
         setor_txt = st.selectbox(
             "Setor",
-            list(SETOR_MAP.keys())
+            list(
+                SETOR_MAP.keys()
+            )
         )
 
     with col6:
+
         regiao_txt = st.selectbox(
             "Região",
-            list(REGIAO_MAP.keys())
+            list(
+                REGIAO_MAP.keys()
+            )
         )
 
     if st.button("🚀 Prever"):
@@ -156,17 +323,43 @@ elif pagina == "🔍 Previsão Individual":
             "indice": indice,
             "crescimento": crescimento,
             "renda": renda,
-            "escolaridade": ESCOLARIDADE_MAP[escolaridade_txt],
-            "setor": SETOR_MAP[setor_txt],
-            "regiao": REGIAO_MAP[regiao_txt]
+            "escolaridade":
+                ESCOLARIDADE_MAP[
+                    escolaridade_txt
+                ],
+            "setor":
+                SETOR_MAP[
+                    setor_txt
+                ],
+            "regiao":
+                REGIAO_MAP[
+                    regiao_txt
+                ]
         }
 
         try:
-            risco = prever_risco(dados)
 
-            st.success(f"Risco previsto: {risco}")
+            risco = prever_risco(
+                dados
+            )
+
+            mapa = {
+                0: "🟢 Baixo",
+                1: "🟡 Médio",
+                2: "🔴 Alto"
+            }
+
+            risco_texto = mapa.get(
+                risco,
+                risco
+            )
+
+            st.success(
+                f"Risco previsto: {risco_texto}"
+            )
 
         except Exception as e:
+
             st.error(e)
 
 # ==========================================
@@ -186,17 +379,29 @@ elif pagina == "📂 Previsão em Lote":
 
         try:
 
-            df = pd.read_csv(arquivo)
+            df_upload = pd.read_csv(
+                arquivo
+            )
 
-            st.dataframe(df.head())
+            st.dataframe(
+                df_upload.head()
+            )
 
-            resultado = prever_em_lote(df)
+            resultado = prever_em_lote(
+                df_upload
+            )
 
-            st.success("Previsão realizada com sucesso!")
+            st.success(
+                "Previsão realizada!"
+            )
 
-            st.dataframe(resultado.head(20))
+            st.dataframe(
+                resultado.head(20)
+            )
 
-            csv = resultado.to_csv(index=False).encode("utf-8")
+            csv = resultado.to_csv(
+                index=False
+            ).encode("utf-8")
 
             st.download_button(
                 "⬇️ Download CSV",
@@ -206,6 +411,7 @@ elif pagina == "📂 Previsão em Lote":
             )
 
         except Exception as e:
+
             st.error(e)
 
 # ==========================================
@@ -214,7 +420,9 @@ elif pagina == "📂 Previsão em Lote":
 
 elif pagina == "📈 Feature Importance":
 
-    st.title("📈 Importância das Variáveis")
+    st.title(
+        "📈 Importância das Variáveis"
+    )
 
     features = [
         "indice",
@@ -225,32 +433,41 @@ elif pagina == "📈 Feature Importance":
         "regiao"
     ]
 
-    importancias = modelo.feature_importances_
+    importancias = (
+        modelo.feature_importances_
+    )
 
-    # segurança
-    tamanho = min(len(features), len(importancias))
+    tamanho = min(
+        len(features),
+        len(importancias)
+    )
 
     importancia = pd.DataFrame({
-        "Variável": features[:tamanho],
-        "Importância": importancias[:tamanho]
+        "Variável":
+            features[:tamanho],
+        "Importância":
+            importancias[:tamanho]
     })
 
-    importancia = importancia.sort_values(
-        by="Importância",
-        ascending=False
+    importancia = (
+        importancia.sort_values(
+            by="Importância",
+            ascending=False
+        )
     )
 
     fig = px.bar(
         importancia,
         x="Variável",
         y="Importância",
+        color="Importância",
         text="Importância",
         title="Feature Importance"
     )
 
     st.plotly_chart(
         fig,
-        use_container_width=True
+        width='stretch'
     )
 
 # ==========================================
@@ -259,117 +476,84 @@ elif pagina == "📈 Feature Importance":
 
 elif pagina == "🔥 Heatmap":
 
-    st.title("🔥 Heatmap de Correlação")
+    st.title(
+        "🔥 Heatmap de Correlação"
+    )
 
     try:
 
-        from preprocessamento import (
-            carregar_dados,
-            limpar_dados
-        )
+        colunas_existentes = []
 
-        df = carregar_dados(
-            "data/dados_ocupacoes.csv"
-        )
-
-        df = limpar_dados(df)
-
-        colunas = [
+        for coluna in [
             "indice",
             "crescimento",
             "renda"
-        ]
+        ]:
 
-        corr = df[colunas].corr()
+            if coluna in df.columns:
 
-        fig, ax = plt.subplots(figsize=(8, 5))
+                colunas_existentes.append(
+                    coluna
+                )
 
-        sns.heatmap(
-            corr,
-            annot=True,
-            cmap="Blues",
-            ax=ax
-        )
+        if len(colunas_existentes) < 2:
 
-        st.pyplot(fig)
+            st.warning(
+                "Poucas colunas numéricas."
+            )
+
+        else:
+
+            corr = (
+                df[
+                    colunas_existentes
+                ].corr()
+            )
+
+            fig, ax = plt.subplots(
+                figsize=(8, 5)
+            )
+
+            sns.heatmap(
+                corr,
+                annot=True,
+                cmap="Blues",
+                ax=ax
+            )
+
+            st.pyplot(fig)
 
     except Exception as e:
-        st.error(e)
 
+        st.error(e)
 
 # ==========================================
 # SHAP
 # ==========================================
 
-elif pagina == "🧠 SHAP":
+elif pagina == "📉 SHAP":
 
-    st.title("🧠 Explicabilidade da IA (SHAP)")
+    st.title(
+        "📉 Explicabilidade SHAP"
+    )
 
-    st.markdown("""
-    O gráfico SHAP mostra quais variáveis mais
-    influenciam as previsões do modelo.
-    """)
+    caminho = (
+        "output/graficos/"
+        "shap_summary.png"
+    )
 
-    caminho_shap = "output/graficos/shap_summary.png"
-
-    if os.path.exists(caminho_shap):
+    if os.path.exists(caminho):
 
         st.image(
-            caminho_shap,
-            caption="Resumo SHAP",
+            caminho,
             width='stretch'
         )
 
     else:
 
-        st.error(
+        st.warning(
             "Imagem SHAP não encontrada."
         )
-
-# ==========================================
-# COMPARAÇÃO DE MODELOS
-# ==========================================
-
-elif pagina == "⚔️ Comparação de Modelos":
-
-    st.title("⚔️ Comparação de Modelos de Machine Learning")
-
-    try:
-
-        from preprocessamento import (
-            carregar_dados,
-            limpar_dados
-        )
-
-        from comparacao_modelos import comparar_modelos
-
-        df = carregar_dados(
-            "data/dados_ocupacoes.csv"
-        )
-
-        df = limpar_dados(df)
-
-        resultados = comparar_modelos(df)
-
-        st.dataframe(resultados)
-
-        fig = px.bar(
-            resultados,
-            x="Modelo",
-            y="Accuracy",
-            color="Modelo",
-            text="Accuracy",
-            title="Comparação de Accuracy"
-        )
-
-        st.plotly_chart(
-            fig,
-            use_container_width=True
-        )
-
-    except Exception as e:
-
-        st.error(e)
 
 # ==========================================
 # RANKING
@@ -377,32 +561,32 @@ elif pagina == "⚔️ Comparação de Modelos":
 
 elif pagina == "🏆 Ranking":
 
-    st.title("🏆 Ranking de Risco")
+    st.title(
+        "🏆 Ranking de Risco"
+    )
 
-    try:
+    ranking = (
+        df["risco_automacao"]
+        .value_counts()
+        .reset_index()
+    )
 
-        df = pd.read_csv("data/dados_ocupacoes.csv")
+    ranking.columns = [
+        "Risco",
+        "Quantidade"
+    ]
 
-        ranking = (
-            df["risco_automacao"]
-            .value_counts()
-            .reset_index()
-        )
+    fig = px.pie(
+        ranking,
+        values="Quantidade",
+        names="Risco",
+        title="Distribuição de Risco"
+    )
 
-        ranking.columns = ["Risco", "Quantidade"]
-
-        fig = px.bar(
-            ranking,
-            x="Risco",
-            y="Quantidade",
-            text="Quantidade",
-            title="Distribuição de Risco"
-        )
-
-        st.plotly_chart(fig, use_container_width=True)
-
-    except Exception as e:
-        st.error(e)
+    st.plotly_chart(
+        fig,
+        width='stretch'
+    )
 
 # ==========================================
 # SOBRE
@@ -410,22 +594,27 @@ elif pagina == "🏆 Ranking":
 
 elif pagina == "ℹ️ Sobre":
 
-    st.title("ℹ️ Sobre o Projeto")
+    st.title("ℹ️ Sobre")
 
     st.markdown("""
     ### TCC - Ciência de Dados
 
-    Projeto desenvolvido para análise do impacto da Inteligência Artificial
-    no mercado de trabalho utilizando técnicas de Machine Learning.
+    Projeto desenvolvido para análise do impacto
+    da Inteligência Artificial no mercado de trabalho
+    utilizando Machine Learning.
 
-    Tecnologias:
+    ### Tecnologias
+
     - Python
     - Pandas
     - Scikit-Learn
     - Random Forest
     - Streamlit
     - Plotly
+    - SHAP
 
-    Objetivo:
-    Identificar profissões com maior risco de automação.
+    ### Objetivo
+
+    Identificar profissões com maior
+    risco de automação.
     """)
