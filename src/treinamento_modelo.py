@@ -1,5 +1,6 @@
 import pandas as pd
 import joblib
+import os
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -60,7 +61,12 @@ def treinar_modelo(df):
     print("\nRelatório:")
     print(classification_report(y_test, y_pred))
 
-    # Salvar modelo
+    # cria pasta automaticamente
+    os.makedirs(
+        "output/modelos",
+        exist_ok=True
+    )
+
     joblib.dump(
         modelo,
         "output/modelos/random_forest.pkl"
