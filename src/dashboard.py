@@ -21,16 +21,32 @@ st.set_page_config(
 )
 
 # ==========================================
-# TREINAR MODELO SE NÃO EXISTIR
+# GARANTIR PASTAS
 # ==========================================
 
-if not os.path.exists(
+os.makedirs(
+    "output/modelos",
+    exist_ok=True
+)
+
+os.makedirs(
+    "output/graficos",
+    exist_ok=True
+)
+
+# ==========================================
+# CARREGAR MODELO
+# ==========================================
+
+modelo = None
+
+if os.path.exists(
     "output/modelos/random_forest.pkl"
 ):
 
-modelo = joblib.load(
-    "output/modelos/random_forest.pkl"
-)
+    modelo = joblib.load(
+        "output/modelos/random_forest.pkl"
+    )
 
 # ==========================================
 # DADOS
@@ -87,6 +103,7 @@ pagina = st.sidebar.radio(
         "🔥 Heatmap",
         "📉 SHAP",
         "🏆 Ranking",
+        "⚔️ Comparação de Modelos",
         "ℹ️ Sobre"
     ]
 )
@@ -103,10 +120,6 @@ if pagina == "📊 Dashboard":
     Plataforma de análise do impacto da Inteligência Artificial
     nas profissões utilizando Machine Learning.
     """)
-
-    # ======================================
-    # KPIs
-    # ======================================
 
     total = len(df)
 
@@ -157,8 +170,7 @@ if pagina == "📊 Dashboard":
         setor_filtro = st.selectbox(
             "Filtrar por setor",
             ["Todos"] + sorted(
-                df["setor"].dropna().unique()
-                .tolist()
+                df["setor"].dropna().unique().tolist()
             )
         )
 
@@ -167,8 +179,7 @@ if pagina == "📊 Dashboard":
         regiao_filtro = st.selectbox(
             "Filtrar por região",
             ["Todas"] + sorted(
-                df["regiao"].dropna().unique()
-                .tolist()
+                df["regiao"].dropna().unique().tolist()
             )
         )
 
@@ -176,24 +187,18 @@ if pagina == "📊 Dashboard":
         "🔎 Buscar profissão"
     )
 
-    # ======================================
-    # APLICAR FILTROS
-    # ======================================
-
     df_filtrado = df.copy()
 
     if setor_filtro != "Todos":
 
         df_filtrado = df_filtrado[
-            df_filtrado["setor"]
-            == setor_filtro
+            df_filtrado["setor"] == setor_filtro
         ]
 
     if regiao_filtro != "Todas":
 
         df_filtrado = df_filtrado[
-            df_filtrado["regiao"]
-            == regiao_filtro
+            df_filtrado["regiao"] == regiao_filtro
         ]
 
     if busca:
@@ -210,7 +215,7 @@ if pagina == "📊 Dashboard":
     st.divider()
 
     # ======================================
-    # GRÁFICO INTERATIVO
+    # GRÁFICO
     # ======================================
 
     risco_setor = (
@@ -232,12 +237,8 @@ if pagina == "📊 Dashboard":
 
     st.plotly_chart(
         fig,
-        width='stretch'
+        use_container_width=True
     )
-
-    # ======================================
-    # TABELA
-    # ======================================
 
     st.subheader(
         "📋 Dados das Ocupações"
@@ -245,7 +246,7 @@ if pagina == "📊 Dashboard":
 
     st.dataframe(
         df_filtrado,
-        width='stretch'
+        use_container_width=True
     )
 
 # ==========================================
@@ -256,108 +257,110 @@ elif pagina == "🔍 Previsão Individual":
 
     st.title("🔍 Previsão Individual")
 
-    col1, col2, col3 = st.columns(3)
+    if modelo is None:
 
-    with col1:
-
-        indice = st.slider(
-            "Índice de Automação",
-            0,
-            100,
-            50
+        st.error(
+            "Modelo não encontrado."
         )
 
-    with col2:
+    else:
 
-        crescimento = st.slider(
-            "Crescimento (%)",
-            -20,
-            20,
-            5
-        )
+        col1, col2, col3 = st.columns(3)
 
-    with col3:
+        with col1:
 
-        renda = st.number_input(
-            "Renda Média",
-            1000,
-            30000,
-            5000
-        )
-
-    col4, col5, col6 = st.columns(3)
-
-    with col4:
-
-        escolaridade_txt = st.selectbox(
-            "Escolaridade",
-            list(
-                ESCOLARIDADE_MAP.keys()
-            )
-        )
-
-    with col5:
-
-        setor_txt = st.selectbox(
-            "Setor",
-            list(
-                SETOR_MAP.keys()
-            )
-        )
-
-    with col6:
-
-        regiao_txt = st.selectbox(
-            "Região",
-            list(
-                REGIAO_MAP.keys()
-            )
-        )
-
-    if st.button("🚀 Prever"):
-
-        dados = {
-            "indice": indice,
-            "crescimento": crescimento,
-            "renda": renda,
-            "escolaridade":
-                ESCOLARIDADE_MAP[
-                    escolaridade_txt
-                ],
-            "setor":
-                SETOR_MAP[
-                    setor_txt
-                ],
-            "regiao":
-                REGIAO_MAP[
-                    regiao_txt
-                ]
-        }
-
-        try:
-
-            risco = prever_risco(
-                dados
+            indice = st.slider(
+                "Índice de Automação",
+                0,
+                100,
+                50
             )
 
-            mapa = {
-                0: "🟢 Baixo",
-                1: "🟡 Médio",
-                2: "🔴 Alto"
+        with col2:
+
+            crescimento = st.slider(
+                "Crescimento (%)",
+                -20,
+                20,
+                5
+            )
+
+        with col3:
+
+            renda = st.number_input(
+                "Renda Média",
+                1000,
+                30000,
+                5000
+            )
+
+        col4, col5, col6 = st.columns(3)
+
+        with col4:
+
+            escolaridade_txt = st.selectbox(
+                "Escolaridade",
+                list(ESCOLARIDADE_MAP.keys())
+            )
+
+        with col5:
+
+            setor_txt = st.selectbox(
+                "Setor",
+                list(SETOR_MAP.keys())
+            )
+
+        with col6:
+
+            regiao_txt = st.selectbox(
+                "Região",
+                list(REGIAO_MAP.keys())
+            )
+
+        if st.button("🚀 Prever"):
+
+            dados = {
+                "indice": indice,
+                "crescimento": crescimento,
+                "renda": renda,
+                "escolaridade":
+                    ESCOLARIDADE_MAP[
+                        escolaridade_txt
+                    ],
+                "setor":
+                    SETOR_MAP[
+                        setor_txt
+                    ],
+                "regiao":
+                    REGIAO_MAP[
+                        regiao_txt
+                    ]
             }
 
-            risco_texto = mapa.get(
-                risco,
-                risco
-            )
+            try:
 
-            st.success(
-                f"Risco previsto: {risco_texto}"
-            )
+                risco = prever_risco(
+                    dados
+                )
 
-        except Exception as e:
+                mapa = {
+                    0: "🟢 Baixo",
+                    1: "🟡 Médio",
+                    2: "🔴 Alto"
+                }
 
-            st.error(e)
+                risco_texto = mapa.get(
+                    risco,
+                    risco
+                )
+
+                st.success(
+                    f"Risco previsto: {risco_texto}"
+                )
+
+            except Exception as e:
+
+                st.error(e)
 
 # ==========================================
 # PREVISÃO EM LOTE
@@ -421,51 +424,59 @@ elif pagina == "📈 Feature Importance":
         "📈 Importância das Variáveis"
     )
 
-    features = [
-        "indice",
-        "crescimento",
-        "renda",
-        "escolaridade",
-        "setor",
-        "regiao"
-    ]
+    if modelo is None:
 
-    importancias = (
-        modelo.feature_importances_
-    )
-
-    tamanho = min(
-        len(features),
-        len(importancias)
-    )
-
-    importancia = pd.DataFrame({
-        "Variável":
-            features[:tamanho],
-        "Importância":
-            importancias[:tamanho]
-    })
-
-    importancia = (
-        importancia.sort_values(
-            by="Importância",
-            ascending=False
+        st.error(
+            "Modelo não encontrado."
         )
-    )
 
-    fig = px.bar(
-        importancia,
-        x="Variável",
-        y="Importância",
-        color="Importância",
-        text="Importância",
-        title="Feature Importance"
-    )
+    else:
 
-    st.plotly_chart(
-        fig,
-        width='stretch'
-    )
+        features = [
+            "indice",
+            "crescimento",
+            "renda",
+            "escolaridade",
+            "setor",
+            "regiao"
+        ]
+
+        importancias = (
+            modelo.feature_importances_
+        )
+
+        tamanho = min(
+            len(features),
+            len(importancias)
+        )
+
+        importancia = pd.DataFrame({
+            "Variável":
+                features[:tamanho],
+            "Importância":
+                importancias[:tamanho]
+        })
+
+        importancia = (
+            importancia.sort_values(
+                by="Importância",
+                ascending=False
+            )
+        )
+
+        fig = px.bar(
+            importancia,
+            x="Variável",
+            y="Importância",
+            color="Importância",
+            text="Importância",
+            title="Feature Importance"
+        )
+
+        st.plotly_chart(
+            fig,
+            use_container_width=True
+        )
 
 # ==========================================
 # HEATMAP
@@ -535,15 +546,14 @@ elif pagina == "📉 SHAP":
     )
 
     caminho = (
-        "output/graficos/"
-        "shap_summary.png"
+        "output/graficos/shap_summary.png"
     )
 
     if os.path.exists(caminho):
 
         st.image(
             caminho,
-            width='stretch'
+            use_container_width=True
         )
 
     else:
@@ -582,7 +592,7 @@ elif pagina == "🏆 Ranking":
 
     st.plotly_chart(
         fig,
-        width='stretch'
+        use_container_width=True
     )
 
 # ==========================================
@@ -593,11 +603,6 @@ elif pagina == "⚔️ Comparação de Modelos":
 
     st.title("⚔️ Comparação de Modelos")
 
-    st.markdown("""
-    Comparação entre os algoritmos utilizados
-    no projeto de Machine Learning.
-    """)
-
     caminho = (
         "output/graficos/comparacao_modelos.png"
     )
@@ -607,7 +612,7 @@ elif pagina == "⚔️ Comparação de Modelos":
         st.image(
             caminho,
             caption="Comparação de Accuracy",
-            width='stretch'
+            use_container_width=True
         )
 
     else:
