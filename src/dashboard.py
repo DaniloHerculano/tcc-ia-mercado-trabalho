@@ -28,9 +28,6 @@ if not os.path.exists(
     "output/modelos/random_forest.pkl"
 ):
 
-    from main import main
-    main()
-
 modelo = joblib.load(
     "output/modelos/random_forest.pkl"
 )

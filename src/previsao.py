@@ -1,9 +1,24 @@
 import pandas as pd
 import joblib
+import os
 
-modelo = joblib.load(
-    "output/modelos/random_forest.pkl"
-)
+# ==========================================
+# CARREGAR MODELO
+# ==========================================
+
+modelo = None
+
+CAMINHO_MODELO = "output/modelos/random_forest.pkl"
+
+if os.path.exists(CAMINHO_MODELO):
+
+    modelo = joblib.load(
+        CAMINHO_MODELO
+    )
+
+# ==========================================
+# FEATURES
+# ==========================================
 
 FEATURES_MODELO = [
     "escolaridade",
@@ -13,10 +28,14 @@ FEATURES_MODELO = [
 ]
 
 # ==========================================
-# PREVISÃO INDIVIDUAL
+# PREVER RISCO
 # ==========================================
 
 def prever_risco(dados):
+
+    if modelo is None:
+
+        return "Modelo ainda não treinado."
 
     df = pd.DataFrame([dados])
 
@@ -25,9 +44,9 @@ def prever_risco(dados):
     previsao = modelo.predict(df)
 
     mapa = {
-        0: "🟢 Baixo",
-        1: "🟡 Médio",
-        2: "🔴 Alto"
+        0: "Baixo",
+        1: "Médio",
+        2: "Alto"
     }
 
     return mapa.get(
@@ -41,6 +60,14 @@ def prever_risco(dados):
 
 def prever_em_lote(df):
 
+    if modelo is None:
+
+        return pd.DataFrame({
+            "Erro": [
+                "Modelo ainda não treinado."
+            ]
+        })
+
     X = df[FEATURES_MODELO]
 
     previsoes = modelo.predict(X)
@@ -52,7 +79,7 @@ def prever_em_lote(df):
     }
 
     df["risco_previsto"] = [
-        mapa.get(p, p)
+        mapa.get(p, str(p))
         for p in previsoes
     ]
 
