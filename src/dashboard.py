@@ -341,9 +341,7 @@ elif pagina == "🔍 Previsão Individual":
 
             resultado = prever_risco(dados)
 
-            st.write(resultado)
-
-            classe = resultado["classe"]
+            risco = resultado["risco"]
 
             score = resultado["score"]
 
@@ -355,13 +353,15 @@ elif pagina == "🔍 Previsão Individual":
 
             st.success(
                 f"""
-            {emoji.get(classe)}
+{emoji.get(risco)}
 
-            Risco previsto: {classe}
+Risco previsto: {risco}
 
-            Score de risco: {score}%
-            """
+Score de risco: {score}%
+"""
             )
+
+            st.progress(score / 100)
 
         except Exception as e:
 
