@@ -74,4 +74,17 @@ def preparar_dados(df):
         df["risco_automacao"]
     )
 
+    df["indice"] = (
+        df["risco_automacao"]
+        .map({
+            "Baixo": 20,
+            "Médio": 50,
+            "Alto": 80
+        })
+    )
+
+    df["crescimento"] = (
+        df["renda"] / 1000
+    )
+
     return df

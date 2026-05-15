@@ -10,8 +10,10 @@ import os
 # ==========================================
 
 FEATURES = [
-    "escolaridade",
+    "indice",
+    "crescimento",
     "renda",
+    "escolaridade",
     "setor",
     "regiao"
 ]
