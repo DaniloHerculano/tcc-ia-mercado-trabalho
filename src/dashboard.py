@@ -339,23 +339,25 @@ elif pagina == "🔍 Previsão Individual":
 
         try:
 
-            risco = prever_risco(
-                dados
-            )
+            resultado = prever_risco(dados)
 
-            mapa = {
-                0: "🟢 Baixo",
-                1: "🟡 Médio",
-                2: "🔴 Alto"
+            classe = resultado["classe"]
+
+            score = resultado["score"]
+
+            emoji = {
+                "Baixo": "🟢",
+                "Médio": "🟡",
+                "Alto": "🔴"
             }
 
-            risco_texto = mapa.get(
-                risco,
-                risco
-            )
-
             st.success(
-                f"Risco previsto: {risco_texto}"
+                f"""
+                {emoji.get(classe)} 
+                Risco previsto: {classe}
+
+                Score de risco: {score}%
+                """
             )
 
         except Exception as e:

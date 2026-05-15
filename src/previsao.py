@@ -3,12 +3,14 @@ import joblib
 import os
 
 # ==========================================
-# CARREGAR MODELO
+# MODELO
 # ==========================================
 
 modelo = None
 
-CAMINHO_MODELO = "output/modelos/random_forest.pkl"
+CAMINHO_MODELO = (
+    "output/modelos/random_forest.pkl"
+)
 
 if os.path.exists(CAMINHO_MODELO):
 
@@ -21,27 +23,38 @@ if os.path.exists(CAMINHO_MODELO):
 # ==========================================
 
 FEATURES_MODELO = [
-    "escolaridade",
+    "indice",
+    "crescimento",
     "renda",
+    "escolaridade",
     "setor",
     "regiao"
 ]
 
 # ==========================================
-# PREVER RISCO
+# PREVISÃO INDIVIDUAL
 # ==========================================
 
 def prever_risco(dados):
 
     if modelo is None:
 
-        return "Modelo ainda não treinado."
+        return {
+            "erro": "Modelo não encontrado."
+        }
 
     df = pd.DataFrame([dados])
 
     df = df[FEATURES_MODELO]
 
-    previsao = modelo.predict(df)
+    previsao = modelo.predict(df)[0]
+
+    probabilidades = modelo.predict_proba(df)[0]
+
+    score = round(
+        max(probabilidades) * 100,
+        2
+    )
 
     mapa = {
         0: "Baixo",
@@ -49,10 +62,13 @@ def prever_risco(dados):
         2: "Alto"
     }
 
-    return mapa.get(
-        previsao[0],
-        str(previsao[0])
-    )
+    return {
+        "classe": mapa.get(
+            previsao,
+            previsao
+        ),
+        "score": score
+    }
 
 # ==========================================
 # PREVISÃO EM LOTE
@@ -64,13 +80,23 @@ def prever_em_lote(df):
 
         return pd.DataFrame({
             "Erro": [
-                "Modelo ainda não treinado."
+                "Modelo não encontrado."
             ]
         })
 
-    X = df[FEATURES_MODELO]
+    df_modelo = df.copy()
 
-    previsoes = modelo.predict(X)
+    df_modelo = df_modelo[
+        FEATURES_MODELO
+    ]
+
+    previsoes = modelo.predict(
+        df_modelo
+    )
+
+    probabilidades = modelo.predict_proba(
+        df_modelo
+    )
 
     mapa = {
         0: "Baixo",
@@ -78,9 +104,19 @@ def prever_em_lote(df):
         2: "Alto"
     }
 
+    scores = []
+
+    for prob in probabilidades:
+
+        scores.append(
+            round(max(prob) * 100, 2)
+        )
+
     df["risco_previsto"] = [
-        mapa.get(p, str(p))
+        mapa.get(p, p)
         for p in previsoes
     ]
+
+    df["score_risco"] = scores
 
     return df
