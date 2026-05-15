@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-
 # ==========================================
 # CARREGAR DADOS
 # ==========================================
@@ -49,38 +48,172 @@ def limpar_dados(df):
 
 def preparar_dados(df):
 
+    # ======================================
+    # REMOVER NULOS
+    # ======================================
+
     df = df.dropna()
 
-    # encoders
-    le_escolaridade = LabelEncoder()
-    le_setor = LabelEncoder()
-    le_regiao = LabelEncoder()
-    le_risco = LabelEncoder()
+    # ======================================
+    # AJUSTAR TEXTO
+    # ======================================
 
-    # transformar categorias em números
-    df["escolaridade"] = le_escolaridade.fit_transform(
+    colunas_texto = [
+        "escolaridade",
+        "setor",
+        "regiao",
+        "risco_automacao"
+    ]
+
+    for coluna in colunas_texto:
+
+        df[coluna] = (
+            df[coluna]
+            .astype(str)
+            .str.strip()
+        )
+
+    # ======================================
+    # CORRIGIR CODIFICAÇÃO
+    # ======================================
+
+    df["escolaridade"] = (
         df["escolaridade"]
+        .replace({
+            "MÃ©dio": "Médio",
+            "TÃ©cnico": "Técnico",
+            "PÃ³s-graduaÃ§Ã£o": "Pós-graduação"
+        })
     )
 
-    df["setor"] = le_setor.fit_transform(
+    df["setor"] = (
         df["setor"]
+        .replace({
+            "LogÃstica": "Logística",
+            "EducaÃ§Ã£o": "Educação",
+            "SaÃºde": "Saúde",
+            "IndÃºstria": "Indústria"
+        })
     )
 
-    df["regiao"] = le_regiao.fit_transform(
-        df["regiao"]
-    )
-
-    df["risco_automacao"] = le_risco.fit_transform(
+    df["risco_automacao"] = (
         df["risco_automacao"]
+        .replace({
+            "MÃ©dio": "Médio"
+        })
     )
+
+    # ======================================
+    # MAPEAR ESCOLARIDADE
+    # ======================================
+
+    escolaridade_map = {
+        "Fundamental": 0,
+        "Médio": 1,
+        "Técnico": 2,
+        "Superior": 3,
+        "Pós-graduação": 4
+    }
+
+    df["escolaridade"] = (
+        df["escolaridade"]
+        .map(escolaridade_map)
+    )
+
+    # ======================================
+    # MAPEAR SETOR
+    # ======================================
+
+    setor_map = {
+        "Administrativo": 0,
+        "Financeiro": 1,
+        "Logística": 2,
+        "Tecnologia": 3,
+        "Saúde": 4,
+        "Educação": 5,
+        "Indústria": 6
+    }
+
+    df["setor"] = (
+        df["setor"]
+        .map(setor_map)
+    )
+
+    # ======================================
+    # MAPEAR REGIÃO
+    # ======================================
+
+    regiao_map = {
+        "Norte": 0,
+        "Nordeste": 1,
+        "Centro-Oeste": 2,
+        "Sudeste": 3,
+        "Sul": 4
+    }
+
+    df["regiao"] = (
+        df["regiao"]
+        .map(regiao_map)
+    )
+
+    # ======================================
+    # MAPEAR RISCO
+    # ======================================
+
+    risco_map = {
+        "Baixo": 0,
+        "Médio": 1,
+        "Alto": 2
+    }
+
+    df["risco_automacao"] = (
+        df["risco_automacao"]
+        .map(risco_map)
+    )
+
+    # ======================================
+    # REMOVER NAN APÓS MAPEAMENTO
+    # ======================================
+
+    df = df.dropna(
+        subset=[
+            "escolaridade",
+            "setor",
+            "regiao",
+            "risco_automacao"
+        ]
+    )
+
+    # ======================================
+    # CONVERTER PARA INT
+    # ======================================
+
+    df["escolaridade"] = (
+        df["escolaridade"]
+        .astype(int)
+    )
+
+    df["setor"] = (
+        df["setor"]
+        .astype(int)
+    )
+
+    df["regiao"] = (
+        df["regiao"]
+        .astype(int)
+    )
+
+    df["risco_automacao"] = (
+        df["risco_automacao"]
+        .astype(int)
+    )
+
+    # ======================================
+    # NOVAS FEATURES
+    # ======================================
 
     df["indice"] = (
-        df["risco_automacao"]
-        .map({
-            "Baixo": 20,
-            "Médio": 50,
-            "Alto": 80
-        })
+        df["risco_automacao"] * 40
     )
 
     df["crescimento"] = (

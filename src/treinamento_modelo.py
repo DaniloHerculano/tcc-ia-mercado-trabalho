@@ -1,12 +1,15 @@
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import classification_report
-import joblib
 import os
+import joblib
+import pandas as pd
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+
+from preprocessamento import preparar_dados
 
 # ==========================================
-# FEATURES REAIS DO DATASET
+# FEATURES
 # ==========================================
 
 FEATURES = [
@@ -24,36 +27,28 @@ FEATURES = [
 
 def treinar_modelo(df):
 
-    # encoders
-    le_escolaridade = LabelEncoder()
-    le_setor = LabelEncoder()
-    le_regiao = LabelEncoder()
-    le_risco = LabelEncoder()
+    # ======================================
+    # PREPARAR DADOS
+    # ======================================
 
-    # transformar texto em número
-    df["escolaridade"] = le_escolaridade.fit_transform(
-        df["escolaridade"]
-    )
+    df = preparar_dados(df)
 
-    df["setor"] = le_setor.fit_transform(
-        df["setor"]
-    )
+    # DEBUG
+    print("\nColunas disponíveis:")
+    print(df.columns.tolist())
 
-    df["regiao"] = le_regiao.fit_transform(
-        df["regiao"]
-    )
+    # ======================================
+    # X E Y
+    # ======================================
 
-    df["risco_automacao"] = le_risco.fit_transform(
-        df["risco_automacao"]
-    )
-
-    # features
     X = df[FEATURES]
 
-    # target
     y = df["risco_automacao"]
 
-    # split
+    # ======================================
+    # SPLIT
+    # ======================================
+
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
@@ -61,7 +56,10 @@ def treinar_modelo(df):
         random_state=42
     )
 
-    # modelo
+    # ======================================
+    # MODELO
+    # ======================================
+
     modelo = RandomForestClassifier(
         n_estimators=100,
         random_state=42
@@ -69,9 +67,14 @@ def treinar_modelo(df):
 
     modelo.fit(X_train, y_train)
 
+    # ======================================
+    # PREVISÃO
+    # ======================================
+
     y_pred = modelo.predict(X_test)
 
     print("\nRelatório:")
+
     print(
         classification_report(
             y_test,
@@ -79,13 +82,15 @@ def treinar_modelo(df):
         )
     )
 
-    # criar pasta
+    # ======================================
+    # SALVAR MODELO
+    # ======================================
+
     os.makedirs(
         "output/modelos",
         exist_ok=True
     )
 
-    # salvar modelo
     joblib.dump(
         modelo,
         "output/modelos/random_forest.pkl"
@@ -93,4 +98,10 @@ def treinar_modelo(df):
 
     print("\nModelo salvo com sucesso!")
 
-    return modelo, X_test, y_test, y_pred, X
+    return (
+        modelo,
+        X_test,
+        y_test,
+        y_pred,
+        X
+    )
